@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--__________ Wastelander Factions __________-->
+
+	<!-- Wasteland Settlers -->
+
+	<FactionDef ParentName="FactionBase">
+		<defName>FCP_Faction_Wasteland_Settlers</defName>
+		<label>Wasteland Settlers</label>
+		<description>Small communities of wastelanders who have banded together to survive in the harsh post-war world. These settlers live in ramshackle towns, trading scrap and salvaged goods while trying to maintain some semblance of civilization. They're cautious but not hostile, willing to trade with strangers but always wary of raiders and other threats. Most are just trying to scrape by, growing mutated crops, herding brahmin, and defending what little they have.</description>
+		<pawnSingular>settler</pawnSingular>
+		<pawnsPlural>settlers</pawnsPlural>
+		<categoryTag>Outlander</categoryTag>
+		<settlementGenerationWeight>0.5</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<canSiege>false</canSiege>
+		<canStageAttacks>false</canStageAttacks>
+		<leaderTitle>Mayor</leaderTitle>
+		<fixedLeaderKinds>
+			<li>FCP_Pawnkind_Wasteland_Settler_Mayor</li>
+		</fixedLeaderKinds>
+		<factionIconPath>World/WorldObjects/DefaultSettlement</factionIconPath>
+		<techLevel>Industrial</techLevel>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures>
+			<li>FCP_Culture_Wastelander</li>
+		</allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>FCP_Backstory_Wastelander</li>
+					<li>FCP_Backstory_Wastelander_Child</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<geneticVariance>1.0</geneticVariance>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<FCP_Pawnkind_Wastelander_Citizen>10</FCP_Pawnkind_Wastelander_Citizen>
+					<FCP_Pawnkind_Wastelander_Caravan_Guard>3</FCP_Pawnkind_Wastelander_Caravan_Guard>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<FCP_Pawnkind_Wastelander_Citizen>10</FCP_Pawnkind_Wastelander_Citizen>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<FCP_Pawnkind_Wastelander_Citizen>1</FCP_Pawnkind_Wastelander_Citizen>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+				</carriers>
+				<guards>
+					<FCP_Pawnkind_Wastelander_Caravan_Guard>4</FCP_Pawnkind_Wastelander_Caravan_Guard>
+					<FCP_Pawnkind_Wastelander_Citizen>2</FCP_Pawnkind_Wastelander_Citizen>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<FCP_Pawnkind_Wastelander_Citizen>15</FCP_Pawnkind_Wastelander_Citizen>
+					<FCP_Pawnkind_Wastelander_Caravan_Guard>3</FCP_Pawnkind_Wastelander_Caravan_Guard>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	</FactionDef>
+
+	<!-- Scavengers -->
+
+	<FactionDef ParentName="FactionBase">
+		<defName>FCP_Faction_Scavengers</defName>
+		<label>Scavengers</label>
+		<description>Ruthless bands of wasteland raiders who take what they want by force. These scavengers have abandoned any pretense of civilization, preying on travelers and settlements alike. They live by looting, stealing, and killing, wearing mismatched armor cobbled together from their victims. While individually weak compared to organized military forces, scavengers are dangerous in numbers and utterly without mercy. To them, the wasteland is a hunting ground, and everyone else is prey.</description>
+		<pawnSingular>scavenger</pawnSingular>
+		<pawnsPlural>scavengers</pawnsPlural>
+		<categoryTag>Outlander</categoryTag>
+		<settlementGenerationWeight>0.3</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Scavenger Boss</leaderTitle>
+		<fixedLeaderKinds>
+			<li>FCP_Pawnkind_Scavenger_Boss</li>
+		</fixedLeaderKinds>
+		<factionIconPath>World/WorldObjects/DefaultSettlement</factionIconPath>
+		<techLevel>Industrial</techLevel>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures>
+			<li>FCP_Culture_Wastelander</li>
+		</allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>FCP_Backstory_Wastelander</li>
+					<li>FCP_Backstory_Wastelander_Child</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<permanentEnemy>true</permanentEnemy>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<naturalColonyGoodwill>-80~-40</naturalColonyGoodwill>
+		<geneticVariance>1.0</geneticVariance>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_PirateMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<FCP_Pawnkind_Scavenger>12</FCP_Pawnkind_Scavenger>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<FCP_Pawnkind_Scavenger>10</FCP_Pawnkind_Scavenger>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<FCP_Pawnkind_Scavenger>1</FCP_Pawnkind_Scavenger>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+				</carriers>
+				<guards>
+					<FCP_Pawnkind_Scavenger>4</FCP_Pawnkind_Scavenger>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<FCP_Pawnkind_Scavenger>15</FCP_Pawnkind_Scavenger>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	</FactionDef>
+
+</Defs>
