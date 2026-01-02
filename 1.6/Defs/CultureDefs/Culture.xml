@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Cultures and Styles __________-->
+
+    <!--_____ Wastelanders _____-->
+
+    <!-- Cultures -->
+
+	<CultureDef>
+		<defName>FCP_Culture_Wastelander</defName>
+		<label>Wastelander</label>
+		<description>Survivors of the post-apocalyptic wasteland, scrapers and scavengers trying to rebuild civilization from the ruins.</description>
+		<pawnNameMaker>FCP_Retro_Namer_Male</pawnNameMaker>
+		<pawnNameMakerFemale>FCP_Retro_Namer_Female</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoTribal</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityTribal</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerTribal</deityTypeMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalTribal</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/DefaultSettlement</iconPath>
+		<styleItemTags>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Rural</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardRural</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>MoustacheOnly</tag>
+				<baseWeight>0.5</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooFace</tag>
+				<baseWeight>0.3</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooBody</tag>
+				<baseWeight>0.3</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+
+</Defs>
