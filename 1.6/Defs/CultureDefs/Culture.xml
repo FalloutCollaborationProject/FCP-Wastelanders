@@ -13,10 +13,11 @@
 		<description>Survivors of the post-apocalyptic wasteland, scrapers and scavengers trying to rebuild civilization from the ruins.</description>
 		<pawnNameMaker>FCP_Retro_Namer_Male</pawnNameMaker>
 		<pawnNameMakerFemale>FCP_Retro_Namer_Female</pawnNameMakerFemale>
-		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoTribal</ideoNameMaker>
-		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityTribal</deityNameMaker>
-		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerTribal</deityTypeMaker>
-		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalTribal</festivalNameMaker>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoRustican</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityRustican</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerRustican</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Rustican</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
 		<allowedPlaceTags>
 			<li>OriginTribal</li>
 		</allowedPlaceTags>

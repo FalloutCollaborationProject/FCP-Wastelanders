@@ -12,7 +12,7 @@
 		<pawnSingular>settler</pawnSingular>
 		<pawnsPlural>settlers</pawnsPlural>
 		<categoryTag>Outlander</categoryTag>
-		<settlementGenerationWeight>0.5</settlementGenerationWeight>
+		<settlementGenerationWeight>0.6</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<canSiege>false</canSiege>
@@ -21,9 +21,11 @@
 		<fixedLeaderKinds>
 			<li>FCP_Pawnkind_Wasteland_Settler_Mayor</li>
 		</fixedLeaderKinds>
-		<factionIconPath>World/WorldObjects/DefaultSettlement</factionIconPath>
+		<factionIconPath>World_Icon/FCP_Wasteland_Settlers_World_Icon</factionIconPath>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<techLevel>Industrial</techLevel>
-		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <fixedName>Wasteland Settlements</fixedName>
+		<settlementNameMaker>FCP_Namer_Settlement_Wastelanders</settlementNameMaker>
 		<allowedCultures>
 			<li>FCP_Culture_Wastelander</li>
 		</allowedCultures>
@@ -35,7 +37,6 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<geneticVariance>1.0</geneticVariance>
 		<caravanTraderKinds>
 			<li>Caravan_Outlander_BulkGoods</li>
 			<li>Caravan_Outlander_CombatSupplier</li>
@@ -114,7 +115,8 @@
 		<fixedLeaderKinds>
 			<li>FCP_Pawnkind_Scavenger_Boss</li>
 		</fixedLeaderKinds>
-		<factionIconPath>World/WorldObjects/DefaultSettlement</factionIconPath>
+		<factionIconPath>World_Icon/FCP_Wasteland_Scavengers_World_Icon</factionIconPath>
+		<factionNameMaker>NamerFactionPirate</factionNameMaker>
 		<techLevel>Industrial</techLevel>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<allowedCultures>
@@ -130,8 +132,6 @@
 		</backstoryFilters>
 		<permanentEnemy>true</permanentEnemy>
 		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
-		<naturalColonyGoodwill>-80~-40</naturalColonyGoodwill>
-		<geneticVariance>1.0</geneticVariance>
 		<caravanTraderKinds>
 			<li>Caravan_Outlander_PirateMerchant</li>
 		</caravanTraderKinds>
