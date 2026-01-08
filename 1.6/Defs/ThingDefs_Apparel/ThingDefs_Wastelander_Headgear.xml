@@ -535,6 +535,129 @@
         </comps>
     </ThingDef>
 
+    <!-- Gas Mask (Goggles) -->
+
+    <ThingDef ParentName="ApparelBase">
+        <defName>FCP_Apparel_Gasmask_Goggles</defName>
+        <description>A simple gas mask that covers the entire face, often seen worn by raiders. It is held on to the wearer by adjustable straps. It's not very protective against bullets and other physical attacks but provides medium protection against toxins and radiation.</description>
+        <label>Gas Mask with Goggles</label>
+        <smeltable>false</smeltable>
+        <graphicData>
+            <texPath>Things/Apparel/Wasteland_Apparel/Gas_Mask_With_Goggles/FCP_Gas_Mask_With_Goggles</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker Inherit= "false">
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <recipeUsers>
+                <li>FCP_Production_Tailoring_Workbench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Cloth>15</Cloth>
+            <Chemfuel>10</Chemfuel>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>4000</WorkToMake>
+            <Mass>1.0</Mass>
+            <MarketValue>200</MarketValue>
+            <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.80</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+                <li>Eyes</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/Wasteland_Apparel/Gas_Mask_With_Goggles/FCP_Gas_Mask_With_Goggles</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <tags>
+                <li>FCP_Raider_Armor</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Common</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Assault Gasmask -->
+
+    <ThingDef ParentName="ApparelBase">
+        <defName>FCP_Apparel_Assault_Gas_Mask</defName>
+        <description>An armored gasmask worn underneath a cloth hood. It provides decent protection against bullets and hazardous gases and similar substances and is most often worn by raiders.</description>
+        <label>Assault Gasmask</label>
+        <smeltable>false</smeltable>
+        <graphicData>
+            <texPath>Things/Apparel/Wasteland_Apparel/Assault_Gas_Mask/FCP_Assault_Gas_Mask</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker Inherit= "false">
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <recipeUsers>
+                <li>FCP_Production_Tailoring_Workbench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Cloth>15</Cloth>
+            <Steel>10</Steel>
+        </costList>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>4000</WorkToMake>
+            <Mass>1.0</Mass>
+            <MarketValue>200</MarketValue>
+            <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.80</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+                <li>Eyes</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/Wasteland_Apparel/Assault_Gas_Mask/FCP_Assault_Gas_Mask</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <tags>
+                <li>FCP_Raider_Armor</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Common</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    
     <!--___ Slave Apparel ___-->
 
     <!-- Slave Bandana -->
@@ -687,4 +810,54 @@
         </comps>
     </ThingDef>
 
+	<!-- Wrapped Cap -->
+
+	<ThingDef ParentName="HatMakeableBase">
+        <defName>FCP_Apparel_Wrapped_Cap</defName>
+        <label>Wrapped Cap</label>
+        <description>A simple cap made of wrapped cloth, commonly worn by wastelanders for sun protection. Lightweight and provides basic protection from the elements.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/Apparel/Wasteland_Apparel/Wrapped_Cap/FCP_Wrapped_Cap</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costList>
+            <Cloth>15</Cloth>
+        </costList>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>2</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>2500</WorkToMake>
+            <MaxHitPoints>80</MaxHitPoints>
+            <Mass>0.2</Mass>
+            <MarketValue>50</MarketValue>
+            <Insulation_Cold>1.5</Insulation_Cold>
+            <Insulation_Heat>2.0</Insulation_Heat>
+            <EquipDelay>1.0</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/Wasteland_Apparel/Wrapped_Cap/FCP_Wrapped_Cap</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>FCP_Wastelander_Apparel</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="FCP.Core.CompProperties_LabelColored">
+                <rarity>Common</rarity>
+            </li>
+        </comps>
+    </ThingDef>
+
 </Defs>
+

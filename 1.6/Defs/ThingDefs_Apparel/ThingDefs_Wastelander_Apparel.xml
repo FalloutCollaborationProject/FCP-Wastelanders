@@ -2068,6 +2068,8 @@
 			</layers>
 			<tags>
 				<li>FCP_Wastelander_Apparel</li>
+				<li>FCP_Raider_Apparel</li>
+				<li>FCP_Slaver_Apparel</li>
 			</tags>
 		</apparel>
 		<comps>
@@ -2131,6 +2133,8 @@
 			</layers>
 			<tags>
 				<li>FCP_Wastelander_Apparel</li>
+				<li>FCP_Raider_Apparel</li>
+				<li>FCP_Slaver_Apparel</li>
 			</tags>
 		</apparel>
 		<comps>
@@ -2194,6 +2198,8 @@
 			</layers>
 			<tags>
 				<li>FCP_Wastelander_Apparel</li>
+				<li>FCP_Raider_Apparel</li>
+				<li>FCP_Slaver_Apparel</li>
 			</tags>
 		</apparel>
 		<comps>
@@ -2250,6 +2256,8 @@
 			</layers>
 			<tags>
 				<li>FCP_Wastelander_Apparel</li>
+				<li>FCP_Raider_Apparel</li>
+				<li>FCP_Slaver_Apparel</li>
 			</tags>
 		</apparel>
 		<comps>
@@ -2313,6 +2321,8 @@
 			</layers>
 			<tags>
 				<li>FCP_Wastelander_Apparel</li>
+				<li>FCP_Raider_Apparel</li>
+				<li>FCP_Slaver_Apparel</li>
 			</tags>
 		</apparel>
 		<comps>
@@ -2610,6 +2620,7 @@
 			</layers>
 			<tags>
 				<li>FCP_Wastelander_Apparel</li>
+				<li>FCP_Raider_Apparel</li>
 			</tags>
 		</apparel>
 		<comps>
@@ -3000,6 +3011,249 @@
 			</layers>
 			<tags>
 				<li>FCP_Slave_Apparel</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="FCP.Core.CompProperties_LabelColored">
+				<rarity>Common</rarity>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Leather Armor -->
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>FCP_Apparel_Leather_Armor</defName>
+		<label>Leather Armor</label>
+		<description>Leather armor is a type of armor composed of various pieces of tanned animal hide stitched together. While providing less protection than metal armor, leather armor is lighter and easier to produce.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Wasteland_Apparel/LeatherArmor/FCP_Leather_Armor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Leather_Plain>60</Leather_Plain>
+		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>7500</WorkToMake>
+			<Mass>4.5</Mass>
+			<MarketValue>220</MarketValue>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.20</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>1.0</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Wasteland_Apparel/LeatherArmor/FCP_Leather_Armor</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>FCP_Wastelander_Apparel</li>
+				<li>FCP_Raider_Apparel</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>FCP_Wastelander_Outfit</li>
+			</defaultOutfitTags>
+		</apparel>
+		<comps>
+			<li Class="FCP.Core.CompProperties_LabelColored">
+				<rarity>Common</rarity>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Metal Armor -->
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>FCP_Apparel_Metal_Armor</defName>
+		<label>Metal Armor</label>
+		<description>Metal armor is composed of various metal plates attached to pieces of leather. While offering superior protection compared to leather armor, it is considerably heavier and more difficult to craft. Common materials include steel, iron, and scrap metal welded together.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Wasteland_Apparel/Metal_Armor/FCP_Metal_Armor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Armor_Workbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>40</Steel>
+			<Leather_Plain>30</Leather_Plain>
+		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>240</MaxHitPoints>
+			<WorkToMake>8500</WorkToMake>
+			<Mass>6.0</Mass>
+			<MarketValue>320</MarketValue>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.40</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Wasteland_Apparel/Metal_Armor/FCP_Metal_Armor</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>FCP_Wastelander_Apparel</li>
+				<li>FCP_Raider_Apparel</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>FCP_Wastelander_Outfit</li>
+			</defaultOutfitTags>
+		</apparel>
+		<comps>
+			<li Class="FCP.Core.CompProperties_LabelColored">
+				<rarity>Common</rarity>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Settler Female Outfit -->
+
+	<ThingDef ParentName="FCP_Apparel_Makeable_Base">
+		<defName>FCP_Apparel_Settler_Female_Outfit</defName>
+		<label>Settler Female Outfit</label>
+		<description>Basic settler clothing worn by women in wasteland communities. Practical and durable, designed for everyday work while providing minimal protection from the elements.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Wasteland_Apparel/SettlerFemaleOutfit/FCP_Settler_Female_Outfit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<smeltable>false</smeltable>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Cloth>30</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToMake>5500</WorkToMake>
+			<Mass>2</Mass>
+			<MarketValue>100</MarketValue>
+			<Insulation_Cold>3.0</Insulation_Cold>
+			<Insulation_Heat>2.3</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Wasteland_Apparel/SettlerFemaleOutfit/FCP_Settler_Female_Outfit</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<gender>Female</gender>
+			<tags>
+				<li>FCP_Wastelander_Apparel</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="FCP.Core.CompProperties_LabelColored">
+				<rarity>Common</rarity>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Settler Male Outfit -->
+
+	<ThingDef ParentName="FCP_Apparel_Makeable_Base">
+		<defName>FCP_Apparel_Settler_Male_Outfit</defName>
+		<label>Settler Male Outfit</label>
+		<description>Basic settler clothing worn by men in wasteland communities. Practical and durable, designed for everyday work while providing minimal protection from the elements.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Wasteland_Apparel/SettlerMaleOutfit/FCP_Settler_Male_Outfit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<smeltable>false</smeltable>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Cloth>30</Cloth>
+		</costList>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToMake>5500</WorkToMake>
+			<Mass>2</Mass>
+			<MarketValue>100</MarketValue>
+			<Insulation_Cold>3.0</Insulation_Cold>
+			<Insulation_Heat>2.3</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Wasteland_Apparel/SettlerMaleOutfit/FCP_Settler_Male_Outfit</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<gender>Male</gender>
+			<tags>
+				<li>FCP_Wastelander_Apparel</li>
 			</tags>
 		</apparel>
 		<comps>
