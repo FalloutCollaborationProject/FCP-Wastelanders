@@ -4,7 +4,7 @@
 	<!--__________ Wastelander Clothing __________-->
 
 	<!--_____ Armor _____-->
-	
+
 	<!--___ Pre-War Armor ___-->
 
 	<!--__ Combat Armor __-->
@@ -81,9 +81,6 @@
 		<costList>
 			<Cloth>25</Cloth>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToMake>9200</WorkToMake>
@@ -126,7 +123,7 @@
 
 	<ThingDef ParentName="ApparelBase">
 		<defName>FCP_Apparel_Combat_Armor_Sturdy</defName>
-		<description>The combat armor was the standard-issue armor of the US army before the war. It is composed of armor plates made from defensive polymer attached to pieces of ballistic fibre. It offers more protection than metal armor, while being somewhat lighter. It is rare and expensive since few groups have the knowledge, and resources, to produce more and many suits are scavenged from pre-war military caches. Medium combat armor provides great protection, albeit it is quite heavy. It’s best suited for warriors in the midst of battle.</description>
+		<description>The combat armor was the standard-issue armor of the US army before the war. It is composed of armor plates made from defensive polymer attached to pieces of ballistic fibre. It offers more protection than metal armor, while being somewhat lighter. It is rare and expensive since few groups have the knowledge, and resources, to produce more and many suits are scavenged from pre-war military caches. Medium combat armor provides great protection, albeit it is quite heavy. Itï¿½s best suited for warriors in the midst of battle.</description>
 		<label>Combat Armor Sturdy</label>
 		<smeltable>false</smeltable>
 		<graphicData>
@@ -146,9 +143,6 @@
 		<costList>
 			<Cloth>25</Cloth>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToMake>9200</WorkToMake>
@@ -187,7 +181,7 @@
 	</ThingDef>
 
 	<!-- Combat Armor Heavy-->
-	
+
 	<ThingDef ParentName="ApparelBase">
 		<defName>FCP_Apparel_Combat_Armor_Heavy</defName>
 		<description>The combat armor was the standard-issue armor of the US army before the war. It is composed of armor plates made from defensive polymer attached to pieces of ballistic fibre. It offers more protection than metal armor, while being somewhat lighter. It is rare and expensive since few groups have the knowledge, and resources, to produce more and many suits are scavenged from pre-war military caches. Exotic and powerful, heavy combat armor offers superior protection against all kinds of damage. Obviously, it is very heavy, but only power armor guards its wearer better against the perils of the wasteland.</description>
@@ -210,9 +204,6 @@
 		<costList>
 			<Cloth>25</Cloth>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToMake>9200</WorkToMake>
@@ -261,6 +252,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
 		<recipeMaker Inherit="false">
 			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
@@ -305,6 +299,8 @@
 				<li>FCP_Combat_Armor_Reinforced</li>
 				<li>FCP_Combat_Armor</li>
 			</tags>
+			<defaultOutfitTags>
+			</defaultOutfitTags>
 		</apparel>
 		<comps>
 			<li Class="FCP.Core.CompProperties_LabelColored">
@@ -1634,7 +1630,7 @@
 	<ThingDef ParentName="FCP_Apparel_Makeable_Base">
 		<defName>FCP_Apparel_Athletic_Outfit</defName>
 		<label>Athletic Outfit</label>
-		<description>A tattered and stitched baseball uniform with boots and knee pads, as they were common before the war. On its belt are pouches for storage. It’s not exactly a real armor and provides only a little protection but better than nothing.</description>
+		<description>A tattered and stitched baseball uniform with boots and knee pads, as they were common before the war. On its belt are pouches for storage. Itï¿½s not exactly a real armor and provides only a little protection but better than nothing.</description>
 		<graphicData>
 			<texPath>Things/Apparel/Wasteland_Apparel/AthleticOutfit/FCP_Athletic_Outfit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -2028,7 +2024,7 @@
 	<ThingDef ParentName="FCP_Apparel_Makeable_Base">
 		<defName>FCP_Apparel_Leather_Coat</defName>
 		<label>Leather Coat</label>
-		<description>An ankle length coat, made from leather. It has a belt which is made from the seat belt of an airplane or a car. It’s mostly seen worn by settlers and other civilians. However, it’s clothing, not armour and does not protect well against bullets.</description>
+		<description>An ankle length coat, made from leather. It has a belt which is made from the seat belt of an airplane or a car. Itï¿½s mostly seen worn by settlers and other civilians. However, itï¿½s clothing, not armour and does not protect well against bullets.</description>
 		<graphicData>
 			<texPath>Things/Apparel/Wasteland_Apparel/LeatherCoat/FCP_Leather_Coat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -2084,7 +2080,7 @@
 	<ThingDef ParentName="FCP_Apparel_Makeable_Base">
 		<defName>FCP_Apparel_Merc_Adventurer_Outfit</defName>
 		<label>Merc Adventurer Outfit</label>
-		<description>An outfit composed of a leather jacket with torn-off sleeves, a red sweater underneath a pair of brown pants and sturdy boots. It’s often worn by roving people and is designed to guarantee unimpaired freedom of movement, while still providing more protection than regular clothing.</description>
+		<description>An outfit composed of a leather jacket with torn-off sleeves, a red sweater underneath a pair of brown pants and sturdy boots. Itï¿½s often worn by roving people and is designed to guarantee unimpaired freedom of movement, while still providing more protection than regular clothing.</description>
 		<graphicData>
 			<texPath>Things/Apparel/Wasteland_Apparel/MercAdventurerOutfit/FCP_Merc_Adventurer_Outfit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -2145,7 +2141,7 @@
 	</ThingDef>
 
 	<!-- Merc Charmer Dress -->
-	
+
 	<ThingDef ParentName="FCP_Apparel_Makeable_Base">
 		<defName>FCP_Apparel_Merc_Charmer_Dress</defName>
 		<label>Merc Charmer Dress</label>
@@ -2272,7 +2268,7 @@
 	<ThingDef ParentName="FCP_Apparel_Makeable_Base">
 		<defName>FCP_Apparel_Merc_Cruiser_Outfit</defName>
 		<label>Merc Cruiser Outfit</label>
-		<description>A long leather jacket with the sleeves removed with a white t-shirt underneath, as well as some black pants and dark boots. Like other merc outfits, it provides less protection than full-on armor, but more than regular clothing and doesn’t weigh down its wearer much.</description>
+		<description>A long leather jacket with the sleeves removed with a white t-shirt underneath, as well as some black pants and dark boots. Like other merc outfits, it provides less protection than full-on armor, but more than regular clothing and doesnï¿½t weigh down its wearer much.</description>
 		<graphicData>
 			<texPath>Things/Apparel/Wasteland_Apparel/MercCruiserOutfit/FCP_Merc_Cruiser_Outfit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -2337,7 +2333,7 @@
 	<ThingDef ParentName="FCP_Apparel_Makeable_Base">
 		<defName>FCP_Apparel_Prospector_Outfit</defName>
 		<label>Prospector Outfit</label>
-		<description>This outfit consists of denim overalls, a brown satchel, and a long tan sleeve shirt underneath, as well as a pair of half boots. As its name implies, it’s most often worn by the prospectors rummaging through the ruins of the old world. As such it is designed to provide protection against dust storms and other hazards, not against bullets or beasts.</description>
+		<description>This outfit consists of denim overalls, a brown satchel, and a long tan sleeve shirt underneath, as well as a pair of half boots. As its name implies, itï¿½s most often worn by the prospectors rummaging through the ruins of the old world. As such it is designed to provide protection against dust storms and other hazards, not against bullets or beasts.</description>
 		<graphicData>
 			<texPath>Things/Apparel/Wasteland_Apparel/ProspectorOutfit/FCP_Prospector_Outfit</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -3043,9 +3039,6 @@
 		<costList>
 			<Leather_Plain>60</Leather_Plain>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>7500</WorkToMake>
@@ -3109,9 +3102,6 @@
 			<Steel>40</Steel>
 			<Leather_Plain>30</Leather_Plain>
 		</costList>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
 		<statBases>
 			<MaxHitPoints>240</MaxHitPoints>
 			<WorkToMake>8500</WorkToMake>
