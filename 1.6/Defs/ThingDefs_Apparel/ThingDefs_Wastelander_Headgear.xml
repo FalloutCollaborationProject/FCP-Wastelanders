@@ -11,12 +11,14 @@
 
     <!-- Combat Armor Helmet Base -->
 
-    <ThingDef Name="FCP_Apparel_Combat_Helmet_Base" ParentName="FCP_Armor_Helmet_Makeable_Base" Abstract="true">
+    <ThingDef Name="FCP_Apparel_Combat_Helmet_Base" ParentName="HatMakeableBase" Abstract="true">
+        <techLevel>Industrial</techLevel>
         <smeltable>false</smeltable>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -72,16 +74,18 @@
 
     <!-- Rivet City Security Helmet -->
 
-    <ThingDef ParentName="FCP_Armor_Helmet_Makeable_Base">
+    <ThingDef ParentName="HatMakeableBase">
         <defName>FCP_Apparel_Rivet_City_Security_Helmet</defName>
         <label>Rivet City Security Helmet</label>
         <description>A helmet worn by the security forces of Rivet City.</description>
+        <techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Things/Apparel/Wasteland_Apparel/RivetCitySecurity/Rivit_City_Security_Helmet/FCP_Rivit_City_Security_Helmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <smeltable>false</smeltable>
         <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisite>FCP_Research_CombatArmorStandard</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
@@ -122,16 +126,18 @@
 
     <!-- Combat Armor Helmet (Fallout 4) -->
 
-    <ThingDef ParentName="FCP_Armor_Helmet_Makeable_Base">
+    <ThingDef ParentName="HatMakeableBase">
         <defName>FCP_Apparel_Combat_Armor_Helmet</defName>
         <label>Modular Combat Armor Helmet</label>
         <description>The combat armor helmet is the corresponding armor piece to the combat armor set. This model displays what is possibly a headlamp, attached to the left side above the brow line.</description>
+        <techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Things/Apparel/Wasteland_Apparel/CombatArmorHelmet/FCP_Combat_Armor_Helmet_Modular</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <smeltable>false</smeltable>
         <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisite>FCP_Research_CombatArmorStandard</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
@@ -174,16 +180,18 @@
 
     <!-- Reinforced Combat Armor Helmet -->
 
-    <ThingDef ParentName="FCP_Armor_Helmet_Makeable_Base">
+    <ThingDef ParentName="HatMakeableBase">
         <defName>FCP_Apparel_Reinforced_Combat_Armor_Helmet</defName>
         <label>Reinforced Combat Armor Helmet</label>
         <description>The helmet is a ballistic assembly, designed to protect the wearer from projectile, bladed weapons, and blunt trauma. An integrated polarized visor protects the user's eyes from the ordinary battlefield hazards of grit and dust.</description>
+        <techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Things/Apparel/Wasteland_Apparel/ReinforcedCombatArmor/FCP_Reinforced_Combat_Armor_Helmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <smeltable>false</smeltable>
         <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisite>FCP_Research_CombatArmorStandard</researchPrerequisite>
             <skillRequirements>
                 <Crafting>10</Crafting>
@@ -226,16 +234,18 @@
 
     <!-- Reinforced Combat Armor Helmet Mk II-->
 
-    <ThingDef ParentName="FCP_Armor_Helmet_Makeable_Base">
+    <ThingDef ParentName="HatMakeableBase">
         <defName>FCP_Apparel_Reinforced_Combat_Armor_Helmet_Mk_II</defName>
         <label>Reinforced Combat Armor Helmet</label>
         <description>The helmet is a ballistic assembly, designed to protect the wearer from projectile, bladed weapons, and blunt trauma. An integrated polarized visor protects the user's eyes from the ordinary battlefield hazards of grit and dust. It is similar in appearance to the helmet used with the reinforced suit but is a different color.</description>
+        <techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Things/Apparel/Wasteland_Apparel/ReinforcedCombatArmorII/FCP_Reinforced_Combat_Armor_Helmet_Mk_II</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <smeltable>false</smeltable>
         <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisite>FCP_Research_CombatArmorStandard</researchPrerequisite>
             <skillRequirements>
                 <Crafting>10</Crafting>
@@ -282,8 +292,10 @@
 
     <!--Officers Cap Base -->
 
-    <ThingDef ParentName="FCP_Hat_Makeable_Base" Name="FCP_Apparel_Officers_Cap_Base" Abstract="true">
+    <ThingDef ParentName="HatMakeableBase" Name="FCP_Apparel_Officers_Cap_Base" Abstract="true">
+        <techLevel>Industrial</techLevel>
         <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
@@ -321,16 +333,18 @@
 
     <!-- Army Helmet -->
 
-    <ThingDef ParentName="FCP_Armor_Helmet_Makeable_Base">
+    <ThingDef ParentName="HatMakeableBase">
         <defName>FCP_Apparel_Army_Helmet</defName>
         <label>Army Helmet</label>
         <description>Part of the army uniform, this helmet offers a little protection.</description>
+        <techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Things/Apparel/Wasteland_Apparel/ArmyUniform/FCP_Army_Helmet_Clean</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <smeltable>false</smeltable>
         <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisite>FCP_Research_MilitaryUniforms</researchPrerequisite>
             <skillRequirements>
                 <Crafting>6</Crafting>
@@ -371,16 +385,18 @@
 
     <!-- Radiation Suit helmet-->
 
-    <ThingDef ParentName="FCP_Armor_Helmet_Makeable_Base">
+    <ThingDef ParentName="HatMakeableBase">
         <defName>FCP_Apparel_Radiations_Suit_Helmet</defName>
         <label>Radiation Suit Helmet</label>
         <description>A helmet designed to protect the wearer from radiation exposure. Part of the radiation suit set.</description>
+        <techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Things/Apparel/Wasteland_Apparel/RadiationSuit/FCP_Radiation_Suit_Helmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <smeltable>false</smeltable>
         <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisite>FCP_Research_MilitaryUniforms</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
@@ -425,15 +441,17 @@
 
     <!-- Sheriff Hat -->
 
-    <ThingDef ParentName="FCP_Hat_Makeable_Base">
+    <ThingDef ParentName="HatMakeableBase">
         <defName>FCP_Apparel_Sheriff_Hat</defName>
         <label>Sheriff Hat</label>
         <description>Part of the sheriff duster outfit. it gives a little buff to perception.</description>
+        <techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Things/Apparel/Wasteland_Apparel/SheriffDuster/FCP_Sheriff_Hat</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
             <skillRequirements>
                 <Crafting>4</Crafting>
@@ -473,15 +491,17 @@
 
     <!-- Ranger Gas Mask -->
 
-    <ThingDef ParentName="FCP_Hat_Makeable_Base">
+    <ThingDef ParentName="HatMakeableBase">
         <defName>FCP_Apparel_Gas_Ranger_Gas_Mask</defName>
         <label>Ranger Gas Mask</label>
         <description>A gas mask to go with the gas ranger outfit.</description>
+        <techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Things/Apparel/Wasteland_Apparel/GasRanger/GasRangerWhite/FCP_Rickys_Rando_Rangers_Gas_Mask_White</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
             <skillRequirements>
                 <Crafting>6</Crafting>
@@ -522,7 +542,7 @@
 
     <!-- Gas Mask (Goggles) -->
 
-    <ThingDef ParentName="FCP_Hat_Makeable_Base">
+    <ThingDef ParentName="ApparelBase">
         <defName>FCP_Apparel_Gasmask_Goggles</defName>
         <description>A simple gas mask that covers the entire face, often seen worn by raiders. It is held on to the wearer by adjustable straps. It's not very protective against bullets and other physical attacks but provides medium protection against toxins and radiation.</description>
         <label>Gas Mask with Goggles</label>
@@ -531,11 +551,15 @@
             <texPath>Things/Apparel/Wasteland_Apparel/Gas_Mask_With_Goggles/FCP_Gas_Mask_With_Goggles</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <recipeMaker>
+        <recipeMaker Inherit= "false">
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
             <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <recipeUsers>
+                <li>FCP_Production_Tailoring_Workbench</li>
+            </recipeUsers>
         </recipeMaker>
         <costList>
             <Cloth>15</Cloth>
@@ -580,7 +604,7 @@
 
     <!-- Assault Gasmask -->
 
-    <ThingDef ParentName="FCP_Hat_Makeable_Base">
+    <ThingDef ParentName="ApparelBase">
         <defName>FCP_Apparel_Assault_Gas_Mask</defName>
         <description>An armored gasmask worn underneath a cloth hood. It provides decent protection against bullets and hazardous gases and similar substances and is most often worn by raiders.</description>
         <label>Assault Gasmask</label>
@@ -589,11 +613,15 @@
             <texPath>Things/Apparel/Wasteland_Apparel/Assault_Gas_Mask/FCP_Assault_Gas_Mask</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <recipeMaker>
+        <recipeMaker Inherit= "false">
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
             <researchPrerequisite>FCP_Research_Apparel_Production</researchPrerequisite>
+            <recipeUsers>
+                <li>FCP_Production_Tailoring_Workbench</li>
+            </recipeUsers>
         </recipeMaker>
         <costList>
             <Cloth>15</Cloth>
@@ -641,15 +669,17 @@
 
     <!-- Slave Bandana -->
 
-    <ThingDef ParentName="FCP_Hat_Makeable_Base">
+    <ThingDef ParentName="HatMakeableBase">
         <defName>FCP_Apparel_Slave_Bandana</defName>
         <label>Slave Bandana</label>
         <description>A bandana tipically worn by slaves.</description>
+        <techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Things/Apparel/Wasteland_Apparel/SlaveBandana/FCP_Slave_Bandana</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
             <skillRequirements>
                 <Crafting>3</Crafting>
@@ -687,15 +717,17 @@
 
     <!-- Slave Rag Hood -->
 
-    <ThingDef ParentName="FCP_Hat_Makeable_Base">
+    <ThingDef ParentName="HatMakeableBase">
         <defName>FCP_Apparel_Slave_Rag_Hood</defName>
         <label>Slave Rag Hood</label>
         <description>A scarf used to create a hood, tipically worn by slaves.</description>
+        <techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Things/Apparel/Wasteland_Apparel/SlaveRagHood/FCP_Slave_Rag_Hood</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
             <skillRequirements>
                 <Crafting>3</Crafting>
@@ -736,10 +768,11 @@
 
     <!-- Slave Scarf Hat -->
 
-    <ThingDef ParentName="FCP_Hat_Makeable_Base">
+    <ThingDef ParentName="HatMakeableBase">
         <defName>FCP_Apparel_Slave_Scarf_Hat</defName>
         <label>Slave Scarf Hat</label>
         <description>A scarf used to create a hat, tipically worn by slaves.</description>
+        <techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Things/Apparel/Wasteland_Apparel/SlaveScarfHat/FCP_Slave_Scarf_Hat</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -748,6 +781,7 @@
             <Cloth>15</Cloth>
         </costList>
         <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
             <skillRequirements>
                 <Crafting>3</Crafting>
@@ -785,10 +819,11 @@
 
 	<!-- Wrapped Cap -->
 
-	<ThingDef ParentName="FCP_Hat_Makeable_Base">
+	<ThingDef ParentName="HatMakeableBase">
         <defName>FCP_Apparel_Wrapped_Cap</defName>
         <label>Wrapped Cap</label>
         <description>A simple cap made of wrapped cloth, commonly worn by wastelanders for sun protection. Lightweight and provides basic protection from the elements.</description>
+        <techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Things/Apparel/Wasteland_Apparel/Wrapped_Cap/FCP_Wrapped_Cap</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -797,6 +832,7 @@
             <Cloth>15</Cloth>
         </costList>
         <recipeMaker>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
             <skillRequirements>
                 <Crafting>2</Crafting>

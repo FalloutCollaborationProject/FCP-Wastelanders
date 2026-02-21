@@ -59,7 +59,7 @@
 
 	<!-- Combat Armor Light -->
 
-	<ThingDef ParentName="FCP_Armor_Machineable_Base">
+	<ThingDef ParentName="ApparelBase">
 		<defName>FCP_Apparel_Combat_Armor_Light</defName>
 		<description>The combat armor was the standard-issue armor of the US army before the war. It is composed of armor plates made from defensive polymer attached to pieces of ballistic fibre. It offers more protection than metal armor, while being somewhat lighter. It is rare and expensive since few groups have the knowledge, and resources, to produce more and many suits are scavenged from pre-war military caches. While still rare, the light combat armor is the most available variant. It offers quite good protection while being lightweight.</description>
 		<label>Combat Armor Light</label>
@@ -68,11 +68,18 @@
 			<texPath>Things/Apparel/Wasteland_Apparel/CombatArmorLight/FCP_Combat_Armor_Chestpiece_Modular_Light</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CombatArmorStandard</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Armor_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Steel>45</Steel>
@@ -118,7 +125,7 @@
 
 	<!-- Combat Armor Sturdy -->
 
-	<ThingDef ParentName="FCP_Armor_Machineable_Base">
+	<ThingDef ParentName="ApparelBase">
 		<defName>FCP_Apparel_Combat_Armor_Sturdy</defName>
 		<description>The combat armor was the standard-issue armor of the US army before the war. It is composed of armor plates made from defensive polymer attached to pieces of ballistic fibre. It offers more protection than metal armor, while being somewhat lighter. It is rare and expensive since few groups have the knowledge, and resources, to produce more and many suits are scavenged from pre-war military caches. Medium combat armor provides great protection, albeit it is quite heavy. It�s best suited for warriors in the midst of battle.</description>
 		<label>Combat Armor Sturdy</label>
@@ -127,11 +134,18 @@
 			<texPath>Things/Apparel/Wasteland_Apparel/CombatArmorSturdy/FCP_Combat_Armor_Chestpiece_Modular_Sturdy</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CombatArmorStandard</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Armor_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Steel>55</Steel>
@@ -176,7 +190,7 @@
 
 	<!-- Combat Armor Heavy-->
 
-	<ThingDef ParentName="FCP_Armor_Machineable_Base">
+	<ThingDef ParentName="ApparelBase">
 		<defName>FCP_Apparel_Combat_Armor_Heavy</defName>
 		<description>The combat armor was the standard-issue armor of the US army before the war. It is composed of armor plates made from defensive polymer attached to pieces of ballistic fibre. It offers more protection than metal armor, while being somewhat lighter. It is rare and expensive since few groups have the knowledge, and resources, to produce more and many suits are scavenged from pre-war military caches. Exotic and powerful, heavy combat armor offers superior protection against all kinds of damage. Obviously, it is very heavy, but only power armor guards its wearer better against the perils of the wasteland.</description>
 		<label>Combat Armor Heavy</label>
@@ -185,11 +199,18 @@
 			<texPath>Things/Apparel/Wasteland_Apparel/CombatArmorHeavy/FCP_Combat_Armor_Chestpiece_Modular_Heavy</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CombatArmorStandard</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Armor_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Steel>70</Steel>
@@ -234,7 +255,7 @@
 
 	<!-- Reinforced Combat Armor -->
 
-	<ThingDef ParentName="FCP_Armor_Machineable_Base">
+	<ThingDef ParentName="ApparelBase">
 		<defName>FCP_Apparel_Reinforced_Combat_Armor</defName>
 		<label>Reinforced Combat Armor</label>
 		<description>A more advanced version of the standard combat armor.</description>
@@ -243,14 +264,21 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
 		<tradeTags>
 			<li>Armor</li>
 		</tradeTags>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CombatArmorStandard</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Armor_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Steel>80</Steel>
@@ -301,7 +329,7 @@
 
 	<!-- Reinforced Combat Armor II -->
 
-	<ThingDef ParentName="FCP_Armor_Machineable_Base">
+	<ThingDef ParentName="ApparelBase">
 		<defName>FCP_Apparel_Reinforced_Combat_Armor_II</defName>
 		<label>Reinforced Combat Armor II</label>
 		<description>An even more advanced version of the reinforced combat armor, offering more protection.</description>
@@ -310,11 +338,18 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>9</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CombatArmorStandard</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Armor_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Steel>90</Steel>
@@ -378,11 +413,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_MilitaryUniforms</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -444,11 +483,15 @@
 			<Insulation_Heat>2.3</Insulation_Heat>
 			<EquipDelay>3</EquipDelay>
 		</statBases>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_MilitaryUniforms</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -488,11 +531,15 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_BusinessWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -550,11 +597,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_BusinessWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -603,11 +654,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -657,11 +712,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -711,11 +770,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_MilitaryUniforms</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -770,11 +833,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -823,11 +890,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -883,11 +954,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -942,11 +1017,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -996,11 +1075,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_BusinessWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -1051,11 +1134,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_BusinessWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -1109,11 +1196,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_BusinessWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -1168,11 +1259,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_Costumes</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -1227,11 +1322,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_Costumes</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -1294,11 +1393,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_Costumes</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -1360,11 +1463,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_Costumes</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -1419,11 +1526,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_Costumes</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -1486,11 +1597,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_Costumes</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -1555,11 +1670,15 @@
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -1597,10 +1716,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Leather_Plain>50</Leather_Plain>
@@ -1650,10 +1773,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>35</Cloth>
@@ -1702,11 +1829,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -1755,11 +1886,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -1807,10 +1942,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>35</Cloth>
@@ -1854,10 +1993,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<smeltable>false</smeltable>
 		<statBases>
@@ -1911,10 +2054,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -1963,10 +2110,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -2024,10 +2175,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -2086,11 +2241,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_BusinessWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>25</Cloth>
@@ -2139,10 +2298,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -2200,10 +2363,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -2253,10 +2420,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -2308,10 +2479,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -2364,10 +2539,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -2421,10 +2600,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -2534,10 +2717,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>70</Cloth>
@@ -2586,10 +2773,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Leather_Plain>60</Leather_Plain>
@@ -2635,10 +2826,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Leather_Plain>50</Leather_Plain>
@@ -2685,10 +2880,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -2743,10 +2942,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -2794,10 +2997,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.90</drawSize>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
@@ -2835,7 +3042,7 @@
 
 	<!-- Leather Armor -->
 
-	<ThingDef ParentName="FCP_Apparel_Makeable_Base">
+	<ThingDef ParentName="ApparelBase">
 		<defName>FCP_Apparel_Leather_Armor</defName>
 		<label>Leather Armor</label>
 		<description>Leather armor is a type of armor composed of various pieces of tanned animal hide stitched together. While providing less protection than metal armor, leather armor is lighter and easier to produce.</description>
@@ -2843,11 +3050,15 @@
 			<texPath>Things/Apparel/Wasteland_Apparel/LeatherArmor/FCP_Leather_Armor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Leather_Plain>60</Leather_Plain>
@@ -2893,7 +3104,7 @@
 
 	<!-- Metal Armor -->
 
-	<ThingDef ParentName="FCP_Armor_Machineable_Base">
+	<ThingDef ParentName="ApparelBase">
 		<defName>FCP_Apparel_Metal_Armor</defName>
 		<label>Metal Armor</label>
 		<description>Metal armor is composed of various metal plates attached to pieces of leather. While offering superior protection compared to leather armor, it is considerably heavier and more difficult to craft. Common materials include steel, iron, and scrap metal welded together.</description>
@@ -2901,11 +3112,15 @@
 			<texPath>Things/Apparel/Wasteland_Apparel/Metal_Armor/FCP_Metal_Armor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_Armor_Production</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Armor_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Steel>40</Steel>
@@ -2960,11 +3175,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>30</Cloth>
@@ -3013,11 +3232,15 @@
 			<drawSize>0.90</drawSize>
 		</graphicData>
 		<smeltable>false</smeltable>
-		<recipeMaker>
+		<recipeMaker Inherit="false">
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
 			<researchPrerequisite>FCP_Research_CasualWear</researchPrerequisite>
+			<recipeUsers>
+				<li>FCP_Production_Tailoring_Workbench</li>
+			</recipeUsers>
 		</recipeMaker>
 		<costList>
 			<Cloth>30</Cloth>
