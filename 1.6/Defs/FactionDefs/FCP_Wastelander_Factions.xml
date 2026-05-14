@@ -38,7 +38,7 @@
 			</li>
 		</backstoryFilters>
 		<caravanTraderKinds>
-			<li>FCP_Caravan_Power_Armor_Trader</li>
+			<li MayRequire="Rick.FCP.PowerArmor">FCP_Caravan_Power_Armor_Trader</li>
 			<li>Caravan_Outlander_BulkGoods</li>
 			<li>Caravan_Outlander_CombatSupplier</li>
 		</caravanTraderKinds>
