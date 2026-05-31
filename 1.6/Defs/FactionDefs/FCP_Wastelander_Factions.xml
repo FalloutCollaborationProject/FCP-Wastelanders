@@ -96,6 +96,37 @@
 			</li>
 		</pawnGroupMakers>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<modExtensions>
+			<li Class="FCP.Factions.FactionExtension_SettlementControl">
+				<namedSettlements>
+					<li>
+						<name>Megaton</name>
+						<traders>
+							<li>
+								<traderName>Craterside Supply</traderName>
+								<traderKind>FCP_Trader_Megaton_CratersideSupply</traderKind>
+							</li>
+							<li>
+								<traderName>Brass Lantern</traderName>
+								<traderKind>FCP_Trader_Megaton_BrassLantern</traderKind>
+							</li>
+							<li>
+								<traderName>Megaton Clinic</traderName>
+								<traderKind>FCP_Trader_Megaton_Clinic</traderKind>
+							</li>
+							<li>
+								<traderName>Moriarty's Saloon</traderName>
+								<traderKind>FCP_Trader_Megaton_MoriartysSaloon</traderKind>
+							</li>
+							<li>
+								<traderName>Water Treatment</traderName>
+								<traderKind>FCP_Trader_Megaton_WaterTreatment</traderKind>
+							</li>
+						</traders>
+					</li>
+				</namedSettlements>
+			</li>
+		</modExtensions>
 	</FactionDef>
 
 </Defs>
