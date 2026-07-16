@@ -1843,63 +1843,6 @@
 		</comps>
 	</ThingDef>
 
-	<!-- Lab Coat Followers -->
-
-	<ThingDef ParentName="FCP_Apparel_Makeable_Base">
-		<defName>FCP_Apparel_Lab_Coat_Followers</defName>
-		<label>Followers Lab Coat</label>
-		<description>A lab coat worn by the followers of the apocalypse. It provides a bonus to science and medicine while worn.</description>
-		<graphicData>
-			<texPath>Things/Apparel/Wasteland_Apparel/LabCoatFollowers/FCP_Lab_Coat_tFollowers_of_the_Appocolypse</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.90</drawSize>
-		</graphicData>
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-		<smeltable>false</smeltable>
-		<statBases>
-			<MaxHitPoints>120</MaxHitPoints>
-			<WorkToMake>6000</WorkToMake>
-			<Mass>2</Mass>
-			<Insulation_Cold>3.0</Insulation_Cold>
-			<Insulation_Heat>2.3</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<HackingSpeed MayRequire="ludeon.rimworld.ideology">0.20</HackingSpeed>
-			<!-- Science +10 -->
-			<MedicalQualityMax>0.20</MedicalQualityMax>
-			<!-- Medicine +10 -->
-		</equippedStatOffsets>
-		<costList>
-			<Cloth>50</Cloth>
-		</costList>
-		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/Wasteland_Apparel/LabCoatFollowers/FCP_Lab_Coat_tFollowers_of_the_Appocolypse</wornGraphicPath>
-			<layers>
-				<li>Middle</li>
-				<li>OnSkin</li>
-			</layers>
-			<tags>
-				<li>FCP_Wastelander_Apparel</li>
-			</tags>
-		</apparel>
-		<comps>
-			<li Class="FCP.Core.CompProperties_LabelColored">
-				<rarity>Common</rarity>
-			</li>
-		</comps>
-	</ThingDef>
-
 	<!-- Leather Coat -->
 
 	<ThingDef ParentName="FCP_Apparel_Makeable_Base">
