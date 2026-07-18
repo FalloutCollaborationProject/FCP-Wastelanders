@@ -20,6 +20,7 @@
     <loadAfter>
         <li>Rick.FCP.Core.Tools</li>
         <li>Rick.FCP.BallisticWeapons</li>
+        <li>Rick.FCP.Robotics</li>
     </loadAfter>
 
 </ModMetaData>

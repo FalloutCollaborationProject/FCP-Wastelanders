@@ -258,4 +258,66 @@
         </stockGenerators>
     </TraderKindDef>
 
+    <!--___ Robot Dealer ___-->
+
+    <TraderKindDef>
+        <defName>FCP_Caravan_Robot_Dealer</defName>
+        <label>robot dealer</label>
+        <category>Slaver</category>
+        <stockGenerators>
+
+            <!--__ Selling __-->
+
+            <!-- Robots -->
+
+            <li Class="FCP.Core.StockGenerator_PawnsWithXenotype" MayRequire="Rick.FCP.Robotics">
+                <ignoreIdeoRequirements>true</ignoreIdeoRequirements>
+                <respectPopulationIntent>false</respectPopulationIntent>
+                <countRange>0~1</countRange>
+                <slaveKindDef>FCP_Pawnkind_Eyebot_Normal</slaveKindDef>
+            </li>
+
+            <li Class="FCP.Core.StockGenerator_PawnsWithXenotype" MayRequire="Rick.FCP.Robotics">
+                <ignoreIdeoRequirements>true</ignoreIdeoRequirements>
+                <respectPopulationIntent>false</respectPopulationIntent>
+                <countRange>0~1</countRange>
+                <slaveKindDef>FCP_Pawnkind_Eyebot_Improved</slaveKindDef>
+            </li>
+
+            <li Class="FCP.Core.StockGenerator_PawnsWithXenotype" MayRequire="Rick.FCP.Robotics">
+                <ignoreIdeoRequirements>true</ignoreIdeoRequirements>
+                <respectPopulationIntent>false</respectPopulationIntent>
+                <countRange>0~1</countRange>
+                <slaveKindDef>FCP_Pawnkind_Protectron_VersionA</slaveKindDef>
+            </li>
+
+            <li Class="FCP.Core.StockGenerator_PawnsWithXenotype" MayRequire="Rick.FCP.Robotics">
+                <ignoreIdeoRequirements>true</ignoreIdeoRequirements>
+                <respectPopulationIntent>false</respectPopulationIntent>
+                <countRange>0~1</countRange>
+                <slaveKindDef>FCP_Pawnkind_Protectron_VersionB</slaveKindDef>
+            </li>
+
+            <li Class="FCP.Core.StockGenerator_PawnsWithXenotype" MayRequire="Rick.FCP.Robotics">
+                <ignoreIdeoRequirements>true</ignoreIdeoRequirements>
+                <respectPopulationIntent>false</respectPopulationIntent>
+                <countRange>0~1</countRange>
+                <slaveKindDef>FCP_Pawnkind_Securitron_Normal</slaveKindDef>
+            </li>
+
+            <!--__ Buying __-->
+
+            <li Class="StockGenerator_BuyExpensiveSimple"></li>
+
+            <!--__ Currency __-->
+
+            <!-- Caps -->
+
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Currency_Caps</thingDef>
+                <countRange>750~2000</countRange>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
+
 </Defs>
