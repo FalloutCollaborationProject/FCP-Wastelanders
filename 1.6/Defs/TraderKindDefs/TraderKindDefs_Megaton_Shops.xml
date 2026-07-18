@@ -108,6 +108,20 @@
                 <countRange>2~4</countRange>
             </li>
 
+            <!-- Heavy Weapons (rare finds) -->
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.ExplosiveWeapons">
+                <thingDef>FCP_Gun_25MM_Grenade_Launcher</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.ExplosiveWeapons">
+                <thingDef>FCP_Gun_Missile_Launcher</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.ExplosiveWeapons">
+                <thingDef>FCP_Gun_Fatman</thingDef>
+                <countRange>0~1</countRange>
+            </li>
+
             <!-- Wasteland Clothing -->
             <li Class="StockGenerator_MultiDef">
                 <thingDefs>
