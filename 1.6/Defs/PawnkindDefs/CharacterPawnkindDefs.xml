@@ -184,4 +184,104 @@
         <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
     </PawnKindDef>
 
+    <!-- Trashcan Carla -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Trader_Trashcan_Carla</defName>
+        <label>Scrap Trader</label>
+        <trader>true</trader>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Caravaneer_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Trader_Trashcan_Carla_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Trader_Trashcan_Carla</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Cricket -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Trader_Cricket</defName>
+        <label>Arms Dealer</label>
+        <trader>true</trader>
+        <combatPower>35</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Caravaneer_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Trader_Cricket_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Trader_Cricket</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Lucas Miller -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Trader_Lucas_Miller</defName>
+        <label>Peddler</label>
+        <trader>true</trader>
+        <combatPower>30</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Caravaneer_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Trader_Lucas_Miller_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Trader_Lucas_Miller</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Doc Weathers -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Trader_Doc_Weathers</defName>
+        <label>Chem Dealer</label>
+        <trader>true</trader>
+        <combatPower>30</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Business_Pre_War</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Trader_Doc_Weathers_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Trader_Doc_Weathers</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
 </Defs>

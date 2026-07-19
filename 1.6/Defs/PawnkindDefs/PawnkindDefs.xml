@@ -376,4 +376,71 @@
         </backstoryFiltersOverride>
     </PawnKindDef>
 
+    <!--___ New Vegas Company Caravans ___-->
+
+    <!-- Crimson Caravan Trader -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Pawnkind_Crimson_Caravan_Trader</defName>
+        <label>Crimson Caravan Trader</label>
+        <trader>true</trader>
+        <combatPower>30</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.8~1.8</gearHealthRange>
+        <apparelMoney>400~700</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Caravaneer_Outfit</li>
+        </apparelRequired>
+        <weaponMoney>600</weaponMoney>
+        <weaponTags>
+            <li>Gun</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+        </weaponTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>15~24</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wastelander_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wastelander</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <!-- Gun Runners Convoy -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Pawnkind_Gun_Runners_Convoy</defName>
+        <label>Gun Runners Convoy Trader</label>
+        <trader>true</trader>
+        <combatPower>40</combatPower>
+        <itemQuality>Good</itemQuality>
+        <gearHealthRange>0.9~1.8</gearHealthRange>
+        <apparelMoney>400~700</apparelMoney>
+        <apparelRequired>
+            <li>FCP_Apparel_Caravaneer_Outfit</li>
+        </apparelRequired>
+        <weaponMoney>1000</weaponMoney>
+        <weaponTags>
+            <li>Gun</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Assault_Rifle</li>
+            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Energy_Weapon</li>
+        </weaponTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>15~24</initialResistanceRange>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wastelander_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wastelander</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
 </Defs>

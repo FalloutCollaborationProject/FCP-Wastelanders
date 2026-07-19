@@ -132,6 +132,18 @@
         </disallowedMemes>
         <caravanTraderKinds>
             <li>FCP_Caravan_Crow_Trader</li>
+            <li>FCP_Caravan_Crazy_Wolfgang</li>
+            <li>FCP_Caravan_Doc_Hoff</li>
+            <li>FCP_Caravan_Lucky_Harith</li>
+            <li>FCP_Caravan_Angela_Staley</li>
+            <li>FCP_Caravan_Banon</li>
+            <li>FCP_Caravan_Belle_Bonny</li>
+            <li>FCP_Caravan_Trashcan_Carla</li>
+            <li>FCP_Caravan_Cricket</li>
+            <li>FCP_Caravan_Lucas_Miller</li>
+            <li>FCP_Caravan_Doc_Weathers</li>
+            <li>FCP_Caravan_Crimson_Caravan_Trader</li>
+            <li>FCP_Caravan_Gun_Runners_Convoy</li>
         </caravanTraderKinds>
         <maxPawnCostPerTotalPointsCurve>
             <points>
@@ -162,13 +174,14 @@
 
             <!-- Traders -->
 
-            <!-- <li Class="FCP.Core.GroupMakerWithCustomChar">
+            <li Class="FCP.Core.GroupMakerWithTraderKind">
                 <kindDef>Trader</kindDef>
                 <traderKinds>
-                    <li>FCP_Caravan_Crow_Trader</li>
+                    <li>FCP_Caravan_Crimson_Caravan_Trader</li>
+                    <li>FCP_Caravan_Gun_Runners_Convoy</li>
                 </traderKinds>
                 <traders>
-                    <FCP_Unique_Pawnkind_Wastelander_Trader_Crow>1</FCP_Unique_Pawnkind_Wastelander_Trader_Crow>
+                    <FCP_Pawnkind_Wastelander_Trader>1</FCP_Pawnkind_Wastelander_Trader>
                 </traders>
                 <carriers>
                     <FCP_Animal_Brahmin>6</FCP_Animal_Brahmin>
@@ -178,9 +191,76 @@
                 </guards>
                 <characterDefs>
                     <li>FCP_Character_Crow</li>
+                    <li>FCP_Character_Crazy_Wolfgang</li>
+                    <li>FCP_Character_Doc_Hoff</li>
+                    <li>FCP_Character_Lucky_Harith</li>
+                    <li>FCP_Character_Angela_Staley</li>
+                    <li>FCP_Character_Banon</li>
+                    <li>FCP_Character_Belle_Bonny</li>
+                    <li>FCP_Character_Cricket</li>
+                    <li>FCP_Character_Lucas_Miller</li>
+                    <li>FCP_Character_Doc_Weathers</li>
                 </characterDefs>
-                <characterChance>1</characterChance>
-            </li> -->
+                <characterTraderKinds>
+                    <li>
+                        <key>FCP_Character_Crow</key>
+                        <value>FCP_Caravan_Crow_Trader</value>
+                    </li>
+                    <li>
+                        <key>FCP_Character_Crazy_Wolfgang</key>
+                        <value>FCP_Caravan_Crazy_Wolfgang</value>
+                    </li>
+                    <li>
+                        <key>FCP_Character_Doc_Hoff</key>
+                        <value>FCP_Caravan_Doc_Hoff</value>
+                    </li>
+                    <li>
+                        <key>FCP_Character_Lucky_Harith</key>
+                        <value>FCP_Caravan_Lucky_Harith</value>
+                    </li>
+                    <li>
+                        <key>FCP_Character_Angela_Staley</key>
+                        <value>FCP_Caravan_Angela_Staley</value>
+                    </li>
+                    <li>
+                        <key>FCP_Character_Banon</key>
+                        <value>FCP_Caravan_Banon</value>
+                    </li>
+                    <li>
+                        <key>FCP_Character_Belle_Bonny</key>
+                        <value>FCP_Caravan_Belle_Bonny</value>
+                    </li>
+                    <li>
+                        <key>FCP_Character_Cricket</key>
+                        <value>FCP_Caravan_Cricket</value>
+                    </li>
+                    <li>
+                        <key>FCP_Character_Lucas_Miller</key>
+                        <value>FCP_Caravan_Lucas_Miller</value>
+                    </li>
+                    <li>
+                        <key>FCP_Character_Doc_Weathers</key>
+                        <value>FCP_Caravan_Doc_Weathers</value>
+                    </li>
+                </characterTraderKinds>
+                <characterChance>0.35</characterChance>
+            </li>
+
+            <!-- Trashcan Carla -->
+
+            <li Class="FCP.Core.GroupMakerWithCustomTraderChar">
+                <kindDef>Trader</kindDef>
+                <traderKind>FCP_Caravan_Trashcan_Carla</traderKind>
+                <traders>
+                    <FCP_Unique_Pawnkind_Wastelander_Trader_Trashcan_Carla>1</FCP_Unique_Pawnkind_Wastelander_Trader_Trashcan_Carla>
+                </traders>
+                <carriers>
+                    <FCP_Animal_Brahmin>1</FCP_Animal_Brahmin>
+                </carriers>
+                <characterDefs>
+                    <li>FCP_Character_Trashcan_Carla</li>
+                </characterDefs>
+            </li>
         </pawnGroupMakers>
         <modExtensions Inherit="False">
             <li Class="FCP.Factions.FactionExtension_HiddenFactionHasCaravans" />

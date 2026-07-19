@@ -215,4 +215,124 @@
         </definitions>
     </FCP.Core.CharacterDef>
 
+    <!-- Trashcan Carla -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Trashcan_Carla</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Trader_Trashcan_Carla</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Trashcan Carla</nickname>
+                <gender>Female</gender>
+                <age>41</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 70, 50)</hairColor>
+                <hairDef>FCP_Hair_Frazzled</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(190, 155, 120)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Cricket -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Cricket</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Trader_Cricket</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Cricket</nickname>
+                <gender>Female</gender>
+                <age>29</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(30, 30, 30)</hairColor>
+                <hairDef>FCP_Hair_Blast_Back</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(180, 145, 110)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Lucas Miller -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Lucas_Miller</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Trader_Lucas_Miller</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Lucas</firstName>
+                <lastName>Miller</lastName>
+                <nickname>Lucas Miller</nickname>
+                <gender>Male</gender>
+                <age>24</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(110, 85, 60)</hairColor>
+                <hairDef>FCP_Hair_Shaggy_Suave</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(215, 185, 155)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Doc Weathers -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Doc_Weathers</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Trader_Doc_Weathers</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName>Weathers</lastName>
+                <nickname>Doc Weathers</nickname>
+                <gender>Male</gender>
+                <age>53</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(140, 140, 140)</hairColor>
+                <hairDef>FCP_Hair_Balding</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(195, 165, 135)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
 </Defs>
