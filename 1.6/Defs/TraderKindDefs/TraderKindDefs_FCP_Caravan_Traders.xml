@@ -336,14 +336,7 @@
                 <ignoreIdeoRequirements>true</ignoreIdeoRequirements>
                 <respectPopulationIntent>false</respectPopulationIntent>
                 <countRange>0~1</countRange>
-                <slaveKindDef>FCP_Pawnkind_Protectron_VersionA</slaveKindDef>
-            </li>
-
-            <li Class="FCP.Core.StockGenerator_PawnsWithXenotype" MayRequire="Rick.FCP.Robotics">
-                <ignoreIdeoRequirements>true</ignoreIdeoRequirements>
-                <respectPopulationIntent>false</respectPopulationIntent>
-                <countRange>0~1</countRange>
-                <slaveKindDef>FCP_Pawnkind_Protectron_VersionB</slaveKindDef>
+                <slaveKindDef>FCP_Pawnkind_Protectron</slaveKindDef>
             </li>
 
             <li Class="FCP.Core.StockGenerator_PawnsWithXenotype" MayRequire="Rick.FCP.Robotics">

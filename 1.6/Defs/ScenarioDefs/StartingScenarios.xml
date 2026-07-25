@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ScenarioDef ParentName="ScenarioBase">
+        <defName>FCP_Scenario_Wastelander_Settlers</defName>
+        <label>Wasteland Settlers</label>
+        <description>No faction, no flag, no patron - just a handful of settlers with a caravan guard and a trade instinct, looking for a stretch of ground nobody else has claimed yet.</description>
+        <scenario>
+            <summary>Independent wasteland settlers strike out to build a home of their own.</summary>
+            <parts>
+
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+                    <def>ConfigurePawnsKindDefs</def>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                    <leftBehindPawnKind>FCP_Pawnkind_Wastelander_Citizen</leftBehindPawnKind>
+                    <kindCounts>
+                        <li>
+                            <kindDef>FCP_Pawnkind_Wastelander_Citizen</kindDef>
+                            <count>2</count>
+                            <requiredAtStart>true</requiredAtStart>
+                        </li>
+                        <li>
+                            <kindDef>FCP_Pawnkind_Wastelander_Caravan_Guard</kindDef>
+                            <count>2</count>
+                            <requiredAtStart>false</requiredAtStart>
+                        </li>
+                        <li>
+                            <kindDef>FCP_Pawnkind_Wastelander_Trader</kindDef>
+                            <count>1</count>
+                            <requiredAtStart>false</requiredAtStart>
+                        </li>
+                    </kindCounts>
+                </li>
+
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>DropPods</method>
+                    <visible>false</visible>
+                </li>
+
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>FCP_Currency_Caps</thingDef>
+                    <count>100</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>FCP_Apparel_Caravaneer_Outfit</thingDef>
+                    <count>5</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined" MayRequire="Rick.FCP.BallisticWeapons">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>FCP_Gun_Caravan_Shotgun</thingDef>
+                    <count>5</count>
+                </li>
+
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>It is the year [FCP_Year]. No NCR contract, no Legion banner, no Brotherhood patrol watching your back - just a caravan, a trade route that dried up, and a decent-looking patch of dirt.\n\nOut here, that's as good a start as any.</text>
+                </li>
+
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+</Defs>
