@@ -64,12 +64,14 @@
 				<options>
 					<FCP_Pawnkind_Wastelander_Citizen>10</FCP_Pawnkind_Wastelander_Citizen>
 					<FCP_Pawnkind_Wastelander_Caravan_Guard>3</FCP_Pawnkind_Wastelander_Caravan_Guard>
+					<FCP_Pawnkind_Protectron MayRequire="Rick.FCP.Robotics">2</FCP_Pawnkind_Protectron>
 				</options>
 			</li>
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
 					<FCP_Pawnkind_Wastelander_Citizen>10</FCP_Pawnkind_Wastelander_Citizen>
+					<FCP_Pawnkind_Protectron MayRequire="Rick.FCP.Robotics">2</FCP_Pawnkind_Protectron>
 				</options>
 			</li>
 			<li>
@@ -92,6 +94,7 @@
 				<options>
 					<FCP_Pawnkind_Wastelander_Citizen>15</FCP_Pawnkind_Wastelander_Citizen>
 					<FCP_Pawnkind_Wastelander_Caravan_Guard>3</FCP_Pawnkind_Wastelander_Caravan_Guard>
+					<FCP_Pawnkind_Protectron MayRequire="Rick.FCP.Robotics">2</FCP_Pawnkind_Protectron>
 				</options>
 			</li>
 		</pawnGroupMakers>
