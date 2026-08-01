@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Gun Runners Blueprint Trader __________-->
+
+    <!--_____ Gun Runners Blueprint Dealer _____-->
+
+    <TraderKindDef>
+        <defName>FCP_Caravan_GunRunners_Blueprint_Trader</defName>
+        <label>Gun Runners Blueprint Dealer</label>
+        <stockGenerators>
+
+            <!--__ Blueprints __-->
+
+            <!-- FCP Gun Runners weapon blueprints only (faction-based filtering) -->
+            <li Class="StockGenerator_Techprints">
+                <countChances>
+                    <li>
+                        <count>3</count>
+                        <chance>1</chance>
+                    </li>
+                    <li>
+                        <count>5</count>
+                        <chance>0.5</chance>
+                    </li>
+                    <li>
+                        <count>8</count>
+                        <chance>0.2</chance>
+                    </li>
+                </countChances>
+            </li>
+
+            <!--__ Other Items __-->
+
+            <!-- Technical Components -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>ComponentIndustrial</thingDef>
+                <countRange>10~30</countRange>
+            </li>
+
+            <!--__ Currency __-->
+
+            <!-- Caps -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>FCP_Currency_Caps</thingDef>
+                <countRange>1500~3000</countRange>
+            </li>
+
+            <!--__ Buying __-->
+
+            <li Class="StockGenerator_BuyExpensiveSimple" />
+            <li Class="StockGenerator_BuyTradeTag"><tag>Techprints</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>WeaponMelee</tag></li>
+
+        </stockGenerators>
+    </TraderKindDef>
+
+</Defs>
