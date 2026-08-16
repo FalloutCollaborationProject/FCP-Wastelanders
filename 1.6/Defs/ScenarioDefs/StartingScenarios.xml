@@ -9,6 +9,10 @@
             <summary>Independent wasteland settlers strike out to build a home of their own.</summary>
             <parts>
 
+                <li Class="FCP.Core.GOAT.ScenPart_GOATExam">
+                    <def>FCP_GOATExam</def>
+                </li>
+
                 <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
                     <def>ConfigurePawnsKindDefs</def>
                     <pawnChoiceCount>8</pawnChoiceCount>
@@ -54,8 +58,9 @@
                     <count>5</count>
                 </li>
 
-                <li Class="ScenPart_GameStartDialog">
+                <li Class="FCP.Core.ScenPart_TerminalStartDialog">
                     <def>GameStartDialog</def>
+                    <title>Trade Route</title>
                     <text>It is the year [FCP_Year]. No NCR contract, no Legion banner, no Brotherhood patrol watching your back - just a caravan, a trade route that dried up, and a decent-looking patch of dirt.\n\nOut here, that's as good a start as any.</text>
                 </li>
 
