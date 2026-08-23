@@ -71,18 +71,18 @@
 				<kindDef>Peaceful</kindDef>
 				<options>
 					<FCP_Pawnkind_Wastelander_Citizen>10</FCP_Pawnkind_Wastelander_Citizen>
+					<FCP_Pawnkind_Ghoul_Wastelander MayRequire="Rick.FCP.Ghouls">2</FCP_Pawnkind_Ghoul_Wastelander>
 					<FCP_Pawnkind_Protectron MayRequire="Rick.FCP.Robotics">2</FCP_Pawnkind_Protectron>
 				</options>
 			</li>
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<FCP_Pawnkind_Wastelander_Trader>1</FCP_Pawnkind_Wastelander_Trader>
+					<FCP_Pawnkind_Wastelander_Trader>4</FCP_Pawnkind_Wastelander_Trader>
+					<FCP_Pawnkind_Crimson_Caravan_Trader>1</FCP_Pawnkind_Crimson_Caravan_Trader>
 				</traders>
 				<carriers>
-					<Muffalo>6</Muffalo>
-					<Dromedary>5</Dromedary>
-					<Alpaca>2</Alpaca>
+					<FCP_Animal_Brahmin>13</FCP_Animal_Brahmin>
 				</carriers>
 				<guards>
 					<FCP_Pawnkind_Wastelander_Caravan_Guard>4</FCP_Pawnkind_Wastelander_Caravan_Guard>
@@ -94,6 +94,7 @@
 				<options>
 					<FCP_Pawnkind_Wastelander_Citizen>15</FCP_Pawnkind_Wastelander_Citizen>
 					<FCP_Pawnkind_Wastelander_Caravan_Guard>3</FCP_Pawnkind_Wastelander_Caravan_Guard>
+					<FCP_Pawnkind_Ghoul_Wastelander MayRequire="Rick.FCP.Ghouls">3</FCP_Pawnkind_Ghoul_Wastelander>
 					<FCP_Pawnkind_Protectron MayRequire="Rick.FCP.Robotics">2</FCP_Pawnkind_Protectron>
 				</options>
 			</li>
@@ -104,6 +105,33 @@
 				<namedSettlements>
 					<li>
 						<name>Megaton</name>
+						<guaranteedCharacters>
+							<li>FCP_Character_Moira_Brown</li>
+							<li>FCP_Character_Colin_Moriarty</li>
+							<li MayRequire="Rick.FCP.Ghouls">FCP_Character_Gob</li>
+							<li>FCP_Character_Mr_Burke</li>
+							<li>FCP_Character_Nova</li>
+							<li>FCP_Character_Lucas_Simms</li>
+							<li>FCP_Character_Harden_Simms</li>
+							<li>FCP_Character_Manya_Vargas</li>
+							<li>FCP_Character_Nathan_Vargas</li>
+							<li>FCP_Character_Walter</li>
+							<li>FCP_Character_Billy_Creel</li>
+							<li>FCP_Character_Maggie</li>
+							<li>FCP_Character_Jericho</li>
+							<li>FCP_Character_Leo_Stahl</li>
+							<li>FCP_Character_Andy_Stahl</li>
+							<li>FCP_Character_Jenny_Stahl</li>
+							<li>FCP_Character_Stockholm</li>
+							<li>FCP_Character_Doc_Church</li>
+							<li>FCP_Character_Lucy_West</li>
+							<li>FCP_Character_Rory_Maclaren</li>
+							<li MayRequire="Rick.FCP.COA">FCP_Character_CoA_Confessor_Cromwell</li>
+							<li MayRequire="Rick.FCP.COA">FCP_Character_CoA_Mother_Maya</li>
+							<li MayRequire="Rick.FCP.Robotics">FCP_Character_DeputyWeld</li>
+							<li MayRequire="Rick.FCP.Robotics">FCP_Character_DeputySteel</li>
+							<li MayRequire="Rick.FCP.Robotics">FCP_Character_Wadsworth</li>
+						</guaranteedCharacters>
 						<traders>
 							<li>
 								<traderName>Craterside Supply</traderName>
@@ -124,6 +152,220 @@
 							<li>
 								<traderName>Water Treatment</traderName>
 								<traderKind>FCP_Trader_Megaton_WaterTreatment</traderKind>
+							</li>
+						</traders>
+					</li>
+					<li>
+						<name>Republic of Dave</name>
+						<guaranteedCharacters>
+							<li>FCP_Character_Dave_Wyatt</li>
+							<li>FCP_Character_Rosie</li>
+							<li>FCP_Character_Jessica</li>
+							<li>FCP_Character_Bob</li>
+							<li>FCP_Character_Shawna</li>
+							<li>FCP_Character_Mary</li>
+							<li>FCP_Character_Rachael</li>
+							<li>FCP_Character_Ralph</li>
+							<li>FCP_Character_Flower</li>
+						</guaranteedCharacters>
+					</li>
+					<li>
+						<name>Rivet City</name>
+						<guaranteedPawnKinds>
+							<FCP_Pawnkind_Rivet_City_Security>4</FCP_Pawnkind_Rivet_City_Security>
+						</guaranteedPawnKinds>
+						<guaranteedCharacters>
+							<li>FCP_Character_Harkness</li>
+							<li>FCP_Character_Lana_Danvers</li>
+							<li>FCP_Character_Abraham_Washington</li>
+							<li>FCP_Character_Madison_Li_Rivet_City</li>
+							<li>FCP_Character_Janice_Kaplinski</li>
+							<li>FCP_Character_Seagrave_Holmes</li>
+							<li>FCP_Character_Flak</li>
+							<li>FCP_Character_Shrapnel</li>
+							<li>FCP_Character_Cindy_Cantelli</li>
+							<li>FCP_Character_Paulie_Cantelli</li>
+							<li>FCP_Character_Gary_Staley</li>
+							<li>FCP_Character_Horace_Pinkerton</li>
+							<li>FCP_Character_Vera_Weatherly</li>
+							<li>FCP_Character_Doctor_Preston</li>
+							<li>FCP_Character_Father_Clifford</li>
+						</guaranteedCharacters>
+						<traders>
+							<li>
+								<traderName>Rivet City Supply</traderName>
+								<traderKind>FCP_Trader_RivetCity_Supply</traderKind>
+							</li>
+							<li>
+								<traderName>Flak 'N Shrapnel's</traderName>
+								<traderKind>FCP_Trader_RivetCity_FlakNShrapnel</traderKind>
+							</li>
+							<li>
+								<traderName>A Quick Fix</traderName>
+								<traderKind>FCP_Trader_RivetCity_AQuickFix</traderKind>
+							</li>
+							<li>
+								<traderName>Gary's Galley</traderName>
+								<traderKind>FCP_Trader_RivetCity_GarysGalley</traderKind>
+							</li>
+							<li>
+								<traderName>Potomac Attire</traderName>
+								<traderKind>FCP_Trader_RivetCity_PotomacAttire</traderKind>
+							</li>
+							<li>
+								<traderName>Weatherly Hotel</traderName>
+								<traderKind>FCP_Trader_RivetCity_WeatherlyHotel</traderKind>
+							</li>
+						</traders>
+					</li>
+					<li>
+						<name>Arefu</name>
+						<guaranteedCharacters>
+							<li>FCP_Character_Evan_King</li>
+							<li>FCP_Character_Ken_Ewers</li>
+							<li>FCP_Character_Brailee_Ewers</li>
+							<li>FCP_Character_Karen_Schenzy</li>
+						</guaranteedCharacters>
+					</li>
+					<li>
+						<name>Tenpenny Tower</name>
+						<guaranteedCharacters>
+							<li>FCP_Character_Allistair_Tenpenny</li>
+							<li>FCP_Character_Gustavo</li>
+							<li>FCP_Character_Herbert_Dashwood</li>
+							<li>FCP_Character_Julius_Banfield</li>
+							<li>FCP_Character_Susan_Lancaster</li>
+							<li>FCP_Character_Edgar_Wellington</li>
+							<li>FCP_Character_Millicent_Wellington</li>
+							<li>FCP_Character_Anthony_Ling</li>
+							<li>FCP_Character_Lydia_Montenegro</li>
+							<li>FCP_Character_Margaret_Primrose</li>
+							<li MayRequire="Rick.FCP.Robotics">FCP_Character_Shakes</li>
+						</guaranteedCharacters>
+						<traders>
+							<li>
+								<traderName>New Urban Apparel</traderName>
+								<traderKind>FCP_Trader_TenpennyTower_NewUrbanApparel</traderKind>
+							</li>
+							<li>
+								<traderName>Boutique Le Chic</traderName>
+								<traderKind>FCP_Trader_TenpennyTower_BoutiqueLeChic</traderKind>
+							</li>
+							<li>
+								<traderName>Cafe Beau Monde</traderName>
+								<traderKind>FCP_Trader_TenpennyTower_CafeBeauMonde</traderKind>
+							</li>
+							<li>
+								<traderName>Wellness Center</traderName>
+								<traderKind>FCP_Trader_TenpennyTower_WellnessCenter</traderKind>
+							</li>
+							<li>
+								<traderName>Federalist Lounge</traderName>
+								<traderKind>FCP_Trader_TenpennyTower_FederalistLounge</traderKind>
+							</li>
+						</traders>
+					</li>
+					<li MayRequire="Rick.FCP.Ghouls">
+						<name>Underworld</name>
+						<guaranteedCharacters>
+							<li>FCP_Character_Carol</li>
+							<li>FCP_Character_Tulip</li>
+							<li>FCP_Character_Greta</li>
+							<li>FCP_Character_Winthrop</li>
+							<li>FCP_Character_Ahzrukhal</li>
+							<li>FCP_Character_Doctor_Barrows</li>
+							<li>FCP_Character_Nurse_Graves</li>
+							<li>FCP_Character_Snowflake</li>
+							<li>FCP_Character_Willow</li>
+							<li>FCP_Character_Patchwork</li>
+							<li>FCP_Character_Mister_Crowley</li>
+							<li>FCP_Character_Quinn</li>
+							<li MayRequire="Rick.FCP.Robotics">FCP_Character_Cerberus</li>
+						</guaranteedCharacters>
+						<traders>
+							<li>
+								<traderName>Underworld Outfitters</traderName>
+								<traderKind>FCP_Trader_Underworld_Outfitters</traderKind>
+							</li>
+							<li>
+								<traderName>The Ninth Circle</traderName>
+								<traderKind>FCP_Trader_Underworld_NinthCircle</traderKind>
+							</li>
+							<li>
+								<traderName>Carol's Place</traderName>
+								<traderKind>FCP_Trader_Underworld_CarolsPlace</traderKind>
+							</li>
+							<li>
+								<traderName>The Chop Shop</traderName>
+								<traderKind>FCP_Trader_Underworld_ChopShop</traderKind>
+							</li>
+						</traders>
+					</li>
+					<li>
+						<name>Little Lamplight</name>
+						<guaranteedCharacters>
+							<li>FCP_Character_MacCready_LittleLamplight</li>
+							<li>FCP_Character_Joseph_LittleLamplight</li>
+							<li>FCP_Character_Penny_LittleLamplight</li>
+							<li>FCP_Character_Lucy_LittleLamplight</li>
+							<li>FCP_Character_Knick_Knack</li>
+							<li>FCP_Character_Knock_Knock</li>
+							<li>FCP_Character_Princess_LittleLamplight</li>
+							<li>FCP_Character_Biwwy</li>
+							<li>FCP_Character_Bumble</li>
+							<li>FCP_Character_Zip</li>
+							<li>FCP_Character_Sammy_LittleLamplight</li>
+							<li>FCP_Character_Squirrel</li>
+							<li>FCP_Character_Eclair</li>
+							<li>FCP_Character_Sticky</li>
+						</guaranteedCharacters>
+					</li>
+					<!--_____ Big Town _____-->
+					<li>
+						<name>Big Town</name>
+						<guaranteedCharacters>
+							<li>FCP_Character_Pappy</li>
+							<li>FCP_Character_Bittercup</li>
+							<li>FCP_Character_Red</li>
+							<li>FCP_Character_Flash</li>
+							<li>FCP_Character_Kimba</li>
+							<li>FCP_Character_Dusty</li>
+							<li>FCP_Character_Shorty</li>
+							<li>FCP_Character_Timebomb</li>
+						</guaranteedCharacters>
+					</li>
+					<!--_____ Grayditch _____-->
+					<li>
+						<name>Grayditch</name>
+						<guaranteedCharacters>
+							<li>FCP_Character_Bryan_Wilks</li>
+							<li>FCP_Character_Weston_Lesko</li>
+						</guaranteedCharacters>
+					</li>
+					<!--_____ Girdershade _____-->
+					<li>
+						<name>Girdershade</name>
+						<forcedMapSize>(75, 1, 75)</forcedMapSize>
+						<guaranteedCharacters>
+							<li>FCP_Character_Ronald_Laren</li>
+							<li>FCP_Character_Sierra_Petrovita</li>
+						</guaranteedCharacters>
+					</li>
+					<!--_____ Canterbury Commons _____-->
+					<li>
+						<name>Canterbury Commons</name>
+						<forcedMapSize>(175, 1, 175)</forcedMapSize>
+						<guaranteedCharacters>
+							<li>FCP_Character_Uncle_Roe</li>
+							<li>FCP_Character_Derek_Pacion</li>
+							<li>FCP_Character_Joe_Porter</li>
+							<li>FCP_Character_Dominic_DEllsadro</li>
+							<li>FCP_Character_Machete</li>
+						</guaranteedCharacters>
+						<traders>
+							<li>
+								<traderName>Porter's Café</traderName>
+								<traderKind>FCP_Trader_CanterburyCommons_PortersCafe</traderKind>
 							</li>
 						</traders>
 					</li>

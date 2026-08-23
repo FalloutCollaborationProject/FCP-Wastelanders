@@ -167,11 +167,11 @@
         <definitions>
             <!-- Bio -->
             <li Class="FCP.Core.CharacterStoryDefinition">
-                <firstName>Banon</firstName>
+                <firstName>Bannon</firstName>
                 <lastName />
-                <nickname>Banon</nickname>
+                <nickname>Bannon</nickname>
                 <gender>Male</gender>
-                <age>54</age>
+                <age>30</age>
             </li>
             <!-- Appearance -->
             <li Class="FCP.Core.CharacterAppearanceDefinition">
@@ -353,7 +353,7 @@
                 <lastName>Brown</lastName>
                 <nickname>Moira</nickname>
                 <gender>Female</gender>
-                <age>32</age>
+                <age>24</age>
             </li>
             <!-- Appearance -->
             <li Class="FCP.Core.CharacterAppearanceDefinition">
@@ -413,7 +413,7 @@
                 <lastName>Burke</lastName>
                 <nickname>Mr. Burke</nickname>
                 <gender>Male</gender>
-                <age>40</age>
+                <age>56</age>
             </li>
             <!-- Appearance -->
             <li Class="FCP.Core.CharacterAppearanceDefinition">
@@ -429,10 +429,10 @@
 
     <!-- Gob -->
 
-    <FCP.Core.CharacterDef>
+    <FCP.Core.CharacterDef MayRequire="Rick.FCP.Ghouls">
         <defName>FCP_Character_Gob</defName>
         <pawnKind>FCP_Unique_Pawnkind_Wastelander_Gob</pawnKind>
-        <xenotype MayRequire="Rick.FCP.Ghouls">FCP_Xenotype_Ghoul</xenotype>
+        <xenotype>FCP_Xenotype_Ghoul</xenotype>
         <faction>FCP_Faction_Hidden_Wastelanders</faction>
         <roles>
         </roles>
@@ -473,7 +473,7 @@
                 <lastName>Moriarty</lastName>
                 <nickname>Moriarty</nickname>
                 <gender>Male</gender>
-                <age>55</age>
+                <age>50</age>
             </li>
             <!-- Appearance -->
             <li Class="FCP.Core.CharacterAppearanceDefinition">
@@ -529,11 +529,11 @@
         <definitions>
             <!-- Bio -->
             <li Class="FCP.Core.CharacterStoryDefinition">
-                <firstName />
+                <firstName>Ernest</firstName>
                 <lastName>Roe</lastName>
                 <nickname>Uncle Roe</nickname>
                 <gender>Male</gender>
-                <age>48</age>
+                <age>39</age>
             </li>
             <!-- Appearance -->
             <li Class="FCP.Core.CharacterAppearanceDefinition">
@@ -637,6 +637,36 @@
         </definitions>
     </FCP.Core.CharacterDef>
 
+    <!-- Commander Lana Danvers -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Lana_Danvers</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Lana_Danvers</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Lana</firstName>
+                <lastName>Danvers</lastName>
+                <nickname>Commander Danvers</nickname>
+                <gender>Female</gender>
+                <age>30</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(50, 40, 30)</hairColor>
+                <hairDef>FCP_Hair_Sarge</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
     <!-- Abraham Washington -->
 
     <FCP.Core.CharacterDef>
@@ -663,6 +693,96 @@
                 <skinColorOverride>(215, 185, 160)</skinColorOverride>
                 <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Nova -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Nova</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Nova</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Nova</nickname>
+                <gender>Female</gender>
+                <age>25</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(30, 20, 15)</hairColor>
+                <hairDef>FCP_Hair_Lil_Devil</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(215, 180, 150)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Carol -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Carol</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Carol</pawnKind>
+        <xenotype MayRequire="Rick.FCP.Ghouls">FCP_Xenotype_Ghoul</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Carol</nickname>
+                <gender>Female</gender>
+                <age>226</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(145, 120, 115)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Red -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Red</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Red</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Red</nickname>
+                <gender>Female</gender>
+                <age>29</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(120, 60, 40)</hairColor>
+                <hairDef>FCP_Hair_Iron_Maiden</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
             </li>
         </definitions>
     </FCP.Core.CharacterDef>
@@ -999,6 +1119,126 @@
         </definitions>
     </FCP.Core.CharacterDef>
 
+    <!-- Chet -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Chet</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Trader_Chet</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Chet</nickname>
+                <gender>Male</gender>
+                <age>38</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(70, 50, 35)</hairColor>
+                <hairDef>FCP_Hair_Waster</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Swank -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Swank</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Swank</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Swank</nickname>
+                <gender>Male</gender>
+                <age>42</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(30, 25, 20)</hairColor>
+                <hairDef>FCP_Hair_Pompadour</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(205, 170, 140)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Cachino -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Cachino</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Cachino</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Cachino</nickname>
+                <gender>Male</gender>
+                <age>40</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>FCP_Hair_Tunnel_Snake</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(195, 160, 125)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Mortimer -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Mortimer</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Mortimer</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Mortimer</nickname>
+                <gender>Male</gender>
+                <age>55</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(180, 180, 180)</hairColor>
+                <hairDef>FCP_Hair_The_Unsettler</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(215, 185, 155)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
     <!--_____ Commonwealth (Fallout 4) _____-->
 
     <!-- Kent Connolly -->
@@ -1177,6 +1417,96 @@
                 <skinColorOverride>(215, 185, 155)</skinColorOverride>
                 <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Fahrenheit -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Fahrenheit</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Fahrenheit</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Fahrenheit</nickname>
+                <gender>Female</gender>
+                <age>34</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(30, 30, 30)</hairColor>
+                <hairDef>FCP_Hair_Warhawk</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(180, 140, 110)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Arturo Rodriguez -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Arturo_Rodriguez</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Trader_Arturo_Rodriguez</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Arturo</firstName>
+                <lastName>Rodriguez</lastName>
+                <nickname>Arturo Rodriguez</nickname>
+                <gender>Male</gender>
+                <age>45</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(40, 30, 20)</hairColor>
+                <hairDef>FCP_Hair_High_Riser</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(180, 140, 100)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Myrna -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Myrna</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Trader_Myrna</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Myrna</nickname>
+                <gender>Female</gender>
+                <age>50</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(130, 110, 90)</hairColor>
+                <hairDef>FCP_Hair_Unladylike</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Fat</bodyTypeDef>
             </li>
         </definitions>
     </FCP.Core.CharacterDef>
@@ -1452,6 +1782,3089 @@
                 <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Thin</bodyTypeDef>
             </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Metzger -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Metzger</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Metzger</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName>Metzger</lastName>
+                <nickname>Metzger</nickname>
+                <gender>Male</gender>
+                <age>50</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(40, 35, 30)</hairColor>
+                <hairDef>FCP_Hair_Buzz_Saw</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(190, 150, 115)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Hulk</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Louis Salvatore -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Louis_Salvatore</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Louis_Salvatore</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Louis</firstName>
+                <lastName>Salvatore</lastName>
+                <nickname>Salvatore</nickname>
+                <gender>Male</gender>
+                <age>70</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(200, 200, 200)</hairColor>
+                <hairDef>FCP_Hair_Balding</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(195, 165, 140)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--_____ Megaton _____-->
+
+    <!-- Lucas Simms -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Lucas_Simms</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Lucas_Simms</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Lucas</firstName>
+                <lastName>Simms</lastName>
+                <nickname>Lucas Simms</nickname>
+                <gender>Male</gender>
+                <age>41</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(70, 55, 40)</hairColor>
+                <hairDef>FCP_Hair_Sarge</hairDef>
+                <beardDef>Moustache</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Harden Simms -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Harden_Simms</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Harden_Simms</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Harden</firstName>
+                <lastName>Simms</lastName>
+                <nickname>Harden Simms</nickname>
+                <gender>Male</gender>
+                <age>10</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(70, 55, 40)</hairColor>
+                <hairDef>Messy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Lucas_Simms</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Manya Vargas -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Manya_Vargas</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Manya_Vargas</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Manya</firstName>
+                <lastName>Vargas</lastName>
+                <nickname>Manya Vargas</nickname>
+                <gender>Female</gender>
+                <age>64</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(210, 205, 195)</hairColor>
+                <hairDef>FCP_Hair_Prim_N_Proper</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(195, 160, 130)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Nathan Vargas -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Nathan_Vargas</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Nathan_Vargas</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Nathan</firstName>
+                <lastName>Vargas</lastName>
+                <nickname>Nathan Vargas</nickname>
+                <gender>Male</gender>
+                <age>65</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(190, 185, 175)</hairColor>
+                <hairDef>FCP_Hair_Balding</hairDef>
+                <beardDef>Moustache</beardDef>
+                <skinColorOverride>(195, 160, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Spouse</relation>
+                        <otherCharacter>FCP_Character_Manya_Vargas</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Walter -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Walter</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Walter</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Walter</nickname>
+                <gender>Male</gender>
+                <age>61</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(170, 165, 160)</hairColor>
+                <hairDef>FCP_Hair_Balding</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(190, 155, 120)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Billy Creel -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Billy_Creel</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Billy_Creel</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Billy</firstName>
+                <lastName>Creel</lastName>
+                <nickname>Billy Creel</nickname>
+                <gender>Male</gender>
+                <age>38</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 65, 45)</hairColor>
+                <hairDef>FCP_Hair_Rough_Nite</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(195, 160, 125)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Maggie -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Maggie</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Maggie</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Maggie</firstName>
+                <lastName />
+                <nickname>Maggie</nickname>
+                <gender>Female</gender>
+                <age>9</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 65, 45)</hairColor>
+                <hairDef>FCP_Hair_Fairy_Tails</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(195, 160, 125)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Billy_Creel</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Jericho -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Jericho</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Jericho</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Jericho</nickname>
+                <gender>Male</gender>
+                <age>65</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(30, 30, 30)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(190, 150, 115)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <!-- Signature Weapon -->
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.BallisticWeapons">
+                <uniqueItem>FCP_Gun_Chinese_Assault_Rifle</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Leo Stahl -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Leo_Stahl</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Leo_Stahl</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Leo</firstName>
+                <lastName>Stahl</lastName>
+                <nickname>Leo Stahl</nickname>
+                <gender>Male</gender>
+                <age>25</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(110, 85, 55)</hairColor>
+                <hairDef>FCP_Hair_Waster</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(205, 170, 140)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Andy Stahl -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Andy_Stahl</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Andy_Stahl</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Andy</firstName>
+                <lastName>Stahl</lastName>
+                <nickname>Andy Stahl</nickname>
+                <gender>Male</gender>
+                <age>23</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(40, 30, 25)</hairColor>
+                <hairDef>FCP_Hair_Comb_Over</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(205, 170, 140)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Sibling</relation>
+                        <otherCharacter>FCP_Character_Leo_Stahl</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Jenny Stahl -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Jenny_Stahl</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Jenny_Stahl</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Jenny</firstName>
+                <lastName>Stahl</lastName>
+                <nickname>Jenny Stahl</nickname>
+                <gender>Female</gender>
+                <age>24</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(120, 80, 50)</hairColor>
+                <hairDef>FCP_Hair_Domestic_Goddess</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(210, 175, 145)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Sibling</relation>
+                        <otherCharacter>FCP_Character_Leo_Stahl</otherCharacter>
+                    </li>
+                    <li>
+                        <relation>Sibling</relation>
+                        <otherCharacter>FCP_Character_Andy_Stahl</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Stockholm -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Stockholm</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Stockholm</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Stockholm</nickname>
+                <gender>Male</gender>
+                <age>25</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(200, 170, 100)</hairColor>
+                <hairDef>FCP_Hair_Buzz_Cut</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(215, 180, 150)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <!-- Signature Weapon -->
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.BallisticWeapons">
+                <uniqueItem>FCP_Gun_32_Hunting_Rifle</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Doc Church -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Doc_Church</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Doc_Church</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName>Church</lastName>
+                <nickname>Doc Church</nickname>
+                <gender>Male</gender>
+                <age>54</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(150, 150, 150)</hairColor>
+                <hairDef>FCP_Hair_Balding</hairDef>
+                <beardDef>Full</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Lucy West -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Lucy_West</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Lucy_West</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Lucy</firstName>
+                <lastName>West</lastName>
+                <nickname>Lucy West</nickname>
+                <gender>Female</gender>
+                <age>25</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(100, 70, 50)</hairColor>
+                <hairDef>FCP_Hair_Frazzled</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(215, 180, 150)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Rory Maclaren -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Rory_Maclaren</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Rory_Maclaren</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Rory</firstName>
+                <lastName>Maclaren</lastName>
+                <nickname>Rory Maclaren</nickname>
+                <gender>Male</gender>
+                <age>30</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(50, 40, 30)</hairColor>
+                <hairDef>FCP_Hair_Mangy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(170, 135, 105)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+            <!-- Signature Item: the collar never came off -->
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Ludeon.RimWorld.Ideology">
+                <uniqueItem>FCP_Apparel_Explosive_Collar</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--_____ Republic of Dave _____-->
+
+    <!-- Dave Wyatt -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Dave_Wyatt</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Dave_Wyatt</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Dave</firstName>
+                <lastName />
+                <nickname>Dave</nickname>
+                <gender>Male</gender>
+                <age>47</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(110, 90, 70)</hairColor>
+                <hairDef>FCP_Hair_Clean_Cut</hairDef>
+                <beardDef>Moustache</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Spouse</relation>
+                        <otherCharacter>FCP_Character_Rosie</otherCharacter>
+                    </li>
+                    <li>
+                        <relation>Spouse</relation>
+                        <otherCharacter>FCP_Character_Jessica</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+            <!-- Signature Weapon -->
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.BallisticWeapons">
+                <uniqueItem>FCP_Gun_Chinese_Assault_Rifle</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Rosie -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Rosie</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Rosie</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Rosie</nickname>
+                <gender>Female</gender>
+                <age>44</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(150, 120, 90)</hairColor>
+                <hairDef>FCP_Hair_No_Nonsense</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(195, 160, 130)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Jessica -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Jessica</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Jessica</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Jessica</nickname>
+                <gender>Female</gender>
+                <age>24</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(200, 170, 90)</hairColor>
+                <hairDef>FCP_Hair_The_Sophisticate</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(210, 175, 145)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Bob -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Bob</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Bob</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Bob</firstName>
+                <lastName />
+                <nickname>Bob</nickname>
+                <gender>Male</gender>
+                <age>19</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 65, 45)</hairColor>
+                <hairDef>FCP_Hair_Warhawk</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Dave_Wyatt</otherCharacter>
+                    </li>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Rosie</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+            <!-- Signature Weapon -->
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.BallisticWeapons">
+                <uniqueItem>FCP_Gun_Chinese_Assault_Rifle</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Shawna -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Shawna</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Shawna</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Shawna</firstName>
+                <lastName />
+                <nickname>Shawna</nickname>
+                <gender>Female</gender>
+                <age>17</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(120, 90, 60)</hairColor>
+                <hairDef>FCP_Hair_Unladylike</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(205, 170, 140)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Dave_Wyatt</otherCharacter>
+                    </li>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Rosie</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Mary -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Mary</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Mary</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Mary</firstName>
+                <lastName />
+                <nickname>Mary</nickname>
+                <gender>Female</gender>
+                <age>12</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(110, 85, 60)</hairColor>
+                <hairDef>FCP_Hair_Fairy_Tails</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Dave_Wyatt</otherCharacter>
+                    </li>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Rosie</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Rachael -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Rachael</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Rachael</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Rachael</firstName>
+                <lastName />
+                <nickname>Rachael</nickname>
+                <gender>Female</gender>
+                <age>11</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 65, 45)</hairColor>
+                <hairDef>FCP_Hair_Bedraggled</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(195, 160, 130)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Dave_Wyatt</otherCharacter>
+                    </li>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Rosie</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Ralph -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Ralph</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Ralph</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Ralph</firstName>
+                <lastName />
+                <nickname>Ralph</nickname>
+                <gender>Male</gender>
+                <age>8</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(80, 60, 40)</hairColor>
+                <hairDef>Messy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Dave_Wyatt</otherCharacter>
+                    </li>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Rosie</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Flower -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Flower</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Flower</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Flower</firstName>
+                <lastName />
+                <nickname>Flower</nickname>
+                <gender>Female</gender>
+                <age>5</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(140, 110, 80)</hairColor>
+                <hairDef>FCP_Hair_Lil_Devil</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Dave_Wyatt</otherCharacter>
+                    </li>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Rosie</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--_____ Arefu _____-->
+
+    <!-- Evan King -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Evan_King</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Evan_King</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Evan</firstName>
+                <lastName>King</lastName>
+                <nickname>Evan King</nickname>
+                <gender>Male</gender>
+                <age>55</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(150, 145, 140)</hairColor>
+                <hairDef>FCP_Hair_Sarge</hairDef>
+                <beardDef>Full</beardDef>
+                <skinColorOverride>(195, 155, 120)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <!-- Unique Items -->
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.BallisticWeapons">
+                <uniqueItem>FCP_Gun_Chinese_Assault_Rifle</uniqueItem>
+            </li>
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.ExplosiveWeapons">
+                <uniqueItem>FCP_Grenade_Fragmentation</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Ken Ewers -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Ken_Ewers</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Ken_Ewers</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Ken</firstName>
+                <lastName>Ewers</lastName>
+                <nickname>Ken Ewers</nickname>
+                <gender>Male</gender>
+                <age>40</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 70, 50)</hairColor>
+                <hairDef>FCP_Hair_Comb_Over</hairDef>
+                <beardDef>Moustache</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Spouse</relation>
+                        <otherCharacter>FCP_Character_Brailee_Ewers</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Brailee Ewers -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Brailee_Ewers</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Brailee_Ewers</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Brailee</firstName>
+                <lastName>Ewers</lastName>
+                <nickname>Brailee Ewers</nickname>
+                <gender>Female</gender>
+                <age>36</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(170, 140, 100)</hairColor>
+                <hairDef>FCP_Hair_Fairy_Tails</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(210, 175, 145)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Karen Schenzy -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Karen_Schenzy</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Karen_Schenzy</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Karen</firstName>
+                <lastName>Schenzy</lastName>
+                <nickname>Karen Schenzy</nickname>
+                <gender>Female</gender>
+                <age>23</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(60, 45, 35)</hairColor>
+                <hairDef>FCP_Hair_Punked</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(215, 180, 150)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--_____ Rivet City _____-->
+
+    <!-- Dr. Madison Li (Rivet City era) -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Madison_Li_Rivet_City</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Madison_Li_Rivet_City</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Madison</firstName>
+                <lastName>Li</lastName>
+                <nickname>Dr. Li</nickname>
+                <gender>Female</gender>
+                <age>48</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>FCP_Hair_Prim_N_Proper</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(191, 166, 140)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Janice Kaplinski -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Janice_Kaplinski</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Janice_Kaplinski</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Janice</firstName>
+                <lastName>Kaplinski</lastName>
+                <nickname>Janice Kaplinski</nickname>
+                <gender>Female</gender>
+                <age>29</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(120, 90, 60)</hairColor>
+                <hairDef>FCP_Hair_Wendy_The_Welder</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(215, 185, 155)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Seagrave Holmes -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Seagrave_Holmes</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Seagrave_Holmes</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Seagrave</firstName>
+                <lastName>Holmes</lastName>
+                <nickname>Seagrave Holmes</nickname>
+                <gender>Male</gender>
+                <age>30</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 80, 70)</hairColor>
+                <hairDef>FCP_Hair_Balding</hairDef>
+                <beardDef>Moustache</beardDef>
+                <skinColorOverride>(195, 160, 125)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Flak -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Flak</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Flak</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Flak</nickname>
+                <gender>Male</gender>
+                <age>50</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>FCP_Hair_Buzz_Cut</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(180, 145, 115)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Lover</relation>
+                        <otherCharacter>FCP_Character_Shrapnel</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Shrapnel -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Shrapnel</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Shrapnel</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Shrapnel</nickname>
+                <gender>Male</gender>
+                <age>50</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(150, 80, 50)</hairColor>
+                <hairDef>FCP_Hair_Iron_Maiden</hairDef>
+                <beardDef>Stubble</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Cindy Cantelli -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Cindy_Cantelli</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Cindy_Cantelli</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Cindy</firstName>
+                <lastName>Cantelli</lastName>
+                <nickname>Cindy Cantelli</nickname>
+                <gender>Female</gender>
+                <age>35</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 60, 40)</hairColor>
+                <hairDef>FCP_Hair_Frazzled</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(205, 170, 140)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Paulie Cantelli -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Paulie_Cantelli</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Paulie_Cantelli</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Paulie</firstName>
+                <lastName>Cantelli</lastName>
+                <nickname>Paulie Cantelli</nickname>
+                <gender>Male</gender>
+                <age>37</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(70, 55, 40)</hairColor>
+                <hairDef>FCP_Hair_Shaggy_Suave</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Spouse</relation>
+                        <otherCharacter>FCP_Character_Cindy_Cantelli</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Gary Staley -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Gary_Staley</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Gary_Staley</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Gary</firstName>
+                <lastName>Staley</lastName>
+                <nickname>Gary Staley</nickname>
+                <gender>Male</gender>
+                <age>58</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(160, 160, 160)</hairColor>
+                <hairDef>FCP_Hair_Balding</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(195, 160, 125)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Parent</relation>
+                        <otherCharacter>FCP_Character_Angela_Staley</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Horace Pinkerton -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Horace_Pinkerton</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Horace_Pinkerton</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Horace</firstName>
+                <lastName>Pinkerton</lastName>
+                <nickname>Pinkerton</nickname>
+                <gender>Male</gender>
+                <age>60</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(210, 210, 210)</hairColor>
+                <hairDef>FCP_Hair_Balding</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Vera Weatherly -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Vera_Weatherly</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Vera_Weatherly</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Vera</firstName>
+                <lastName>Weatherly</lastName>
+                <nickname>Vera Weatherly</nickname>
+                <gender>Female</gender>
+                <age>27</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(180, 140, 90)</hairColor>
+                <hairDef>FCP_Hair_The_Sophisticate</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(215, 185, 155)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Doctor Preston -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Doctor_Preston</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Doctor_Preston</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName>Preston</lastName>
+                <nickname>Doctor Preston</nickname>
+                <gender>Male</gender>
+                <age>50</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(140, 140, 140)</hairColor>
+                <hairDef>FCP_Hair_Clean_Cut</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(205, 175, 145)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Father Clifford -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Father_Clifford</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Father_Clifford</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName>Clifford</lastName>
+                <nickname>Father Clifford</nickname>
+                <gender>Male</gender>
+                <age>40</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(170, 165, 160)</hairColor>
+                <hairDef>FCP_Hair_Comb_Over</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(195, 160, 125)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--_____ Underworld _____-->
+
+    <!-- Winthrop -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Winthrop</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Winthrop</pawnKind>
+        <xenotype MayRequire="Rick.FCP.Ghouls">FCP_Xenotype_Ghoul</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Winthrop</nickname>
+                <gender>Male</gender>
+                <age>205</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(148, 118, 108)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Ahzrukhal -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Ahzrukhal</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Ahzrukhal</pawnKind>
+        <xenotype MayRequire="Rick.FCP.Ghouls">FCP_Xenotype_Ghoul</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Ahzrukhal</nickname>
+                <gender>Male</gender>
+                <age>175</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(152, 122, 112)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Greta -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Greta</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Greta</pawnKind>
+        <xenotype MayRequire="Rick.FCP.Ghouls">FCP_Xenotype_Ghoul</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Greta</nickname>
+                <gender>Female</gender>
+                <age>198</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(146, 119, 113)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Lover</relation>
+                        <otherCharacter>FCP_Character_Carol</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Doctor Barrows -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Doctor_Barrows</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Doctor_Barrows</pawnKind>
+        <xenotype MayRequire="Rick.FCP.Ghouls">FCP_Xenotype_Ghoul</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName>Barrows</lastName>
+                <nickname>Doctor Barrows</nickname>
+                <gender>Male</gender>
+                <age>165</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(150, 121, 109)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Nurse Graves -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Nurse_Graves</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Nurse_Graves</pawnKind>
+        <xenotype MayRequire="Rick.FCP.Ghouls">FCP_Xenotype_Ghoul</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName>Graves</lastName>
+                <nickname>Nurse Graves</nickname>
+                <gender>Female</gender>
+                <age>95</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(148, 120, 111)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Snowflake -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Snowflake</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Snowflake</pawnKind>
+        <xenotype MayRequire="Rick.FCP.Ghouls">FCP_Xenotype_Ghoul</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Snowflake</nickname>
+                <gender>Male</gender>
+                <age>34</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(30, 25, 20)</hairColor>
+                <hairDef>FCP_Hair_Smooth_Suave</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(155, 125, 115)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Willow -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Willow</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Willow</pawnKind>
+        <xenotype MayRequire="Rick.FCP.Ghouls">FCP_Xenotype_Ghoul</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Willow</nickname>
+                <gender>Female</gender>
+                <age>58</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(149, 120, 112)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <!-- Signature Weapon -->
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.EnergyWeapons">
+                <uniqueItem>FCP_Gun_Laser_Rifle</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Patchwork -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Patchwork</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Patchwork</pawnKind>
+        <xenotype MayRequire="Rick.FCP.Ghouls">FCP_Xenotype_Ghoul</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Patchwork</nickname>
+                <gender>Male</gender>
+                <age>188</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(144, 117, 107)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Mister Crowley -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Mister_Crowley</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Mister_Crowley</pawnKind>
+        <xenotype MayRequire="Rick.FCP.Ghouls">FCP_Xenotype_Ghoul</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName>Crowley</lastName>
+                <nickname>Mister Crowley</nickname>
+                <gender>Male</gender>
+                <age>52</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(153, 123, 114)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Quinn -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Quinn</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Quinn</pawnKind>
+        <xenotype MayRequire="Rick.FCP.Ghouls">FCP_Xenotype_Ghoul</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Quinn</nickname>
+                <gender>Male</gender>
+                <age>168</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>Bald</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(147, 119, 110)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--_____ Tenpenny Tower _____-->
+
+    <!-- Allistair Tenpenny -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Allistair_Tenpenny</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Allistair_Tenpenny</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Allistair</firstName>
+                <lastName>Tenpenny</lastName>
+                <nickname>Tenpenny</nickname>
+                <gender>Male</gender>
+                <age>80</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(190, 190, 190)</hairColor>
+                <hairDef>FCP_Hair_Comb_Over</hairDef>
+                <beardDef>Moustache</beardDef>
+                <skinColorOverride>(215, 185, 160)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+            <!-- Signature Weapon -->
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.BallisticWeapons">
+                <uniqueItem>FCP_Gun_Scoped_Hunting_Rifle</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Chief Gustavo -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Gustavo</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Gustavo</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Chief Gustavo</nickname>
+                <gender>Male</gender>
+                <age>42</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(30, 25, 20)</hairColor>
+                <hairDef>FCP_Hair_Warhawk</hairDef>
+                <beardDef>Stubble</beardDef>
+                <skinColorOverride>(180, 145, 115)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Hulk</bodyTypeDef>
+            </li>
+            <!-- Signature Weapon -->
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.BallisticWeapons">
+                <uniqueItem>FCP_Gun_R91_Rifle</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Herbert "Daring" Dashwood -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Herbert_Dashwood</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Herbert_Dashwood</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Herbert</firstName>
+                <lastName>Dashwood</lastName>
+                <nickname>Daring Dashwood</nickname>
+                <gender>Male</gender>
+                <age>70</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(160, 160, 160)</hairColor>
+                <hairDef>FCP_Hair_Pompadour</hairDef>
+                <beardDef>Full</beardDef>
+                <skinColorOverride>(205, 170, 140)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Doctor Julius Banfield -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Julius_Banfield</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Julius_Banfield</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Julius</firstName>
+                <lastName>Banfield</lastName>
+                <nickname>Doctor Banfield</nickname>
+                <gender>Male</gender>
+                <age>52</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(120, 115, 110)</hairColor>
+                <hairDef>FCP_Hair_Balding</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 135)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Susan Lancaster -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Susan_Lancaster</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Susan_Lancaster</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Susan</firstName>
+                <lastName>Lancaster</lastName>
+                <nickname>Susan Lancaster</nickname>
+                <gender>Female</gender>
+                <age>32</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(140, 60, 40)</hairColor>
+                <hairDef>FCP_Hair_Seductress</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(220, 190, 160)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Edgar Wellington II -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Edgar_Wellington</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Edgar_Wellington</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Edgar</firstName>
+                <lastName>Wellington II</lastName>
+                <nickname>Edgar Wellington II</nickname>
+                <gender>Male</gender>
+                <age>58</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(170, 170, 170)</hairColor>
+                <hairDef>FCP_Hair_High_Riser</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(210, 175, 145)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <!-- Family: married to Millicent, but secretly sneaks off to sleep with Susan Lancaster; Millicent has no idea, and finding out gets both Edgar and Susan killed -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Spouse</relation>
+                        <otherCharacter>FCP_Character_Millicent_Wellington</otherCharacter>
+                    </li>
+                    <li>
+                        <relation>Lover</relation>
+                        <otherCharacter>FCP_Character_Susan_Lancaster</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Millicent Wellington -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Millicent_Wellington</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Millicent_Wellington</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Millicent</firstName>
+                <lastName>Wellington</lastName>
+                <nickname>Millicent Wellington</nickname>
+                <gender>Female</gender>
+                <age>55</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(200, 195, 180)</hairColor>
+                <hairDef>FCP_Hair_The_Sophisticate</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(215, 180, 150)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Anthony Ling -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Anthony_Ling</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Anthony_Ling</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Anthony</firstName>
+                <lastName>Ling</lastName>
+                <nickname>Anthony Ling</nickname>
+                <gender>Male</gender>
+                <age>34</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(25, 20, 20)</hairColor>
+                <hairDef>FCP_Hair_Shaggy_Suave</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(195, 160, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Lydia Montenegro -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Lydia_Montenegro</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Lydia_Montenegro</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Lydia</firstName>
+                <lastName>Montenegro</lastName>
+                <nickname>Lydia Montenegro</nickname>
+                <gender>Female</gender>
+                <age>36</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(50, 35, 30)</hairColor>
+                <hairDef>FCP_Hair_Fallen_Angel</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(190, 155, 125)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Margaret Primrose -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Margaret_Primrose</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Margaret_Primrose</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Margaret</firstName>
+                <lastName>Primrose</lastName>
+                <nickname>Margaret Primrose</nickname>
+                <gender>Female</gender>
+                <age>46</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 65, 45)</hairColor>
+                <hairDef>FCP_Hair_Domestic_Goddess</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(205, 170, 140)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--_____ Little Lamplight _____-->
+
+    <!-- MacCready -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_MacCready_LittleLamplight</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_MacCready_LittleLamplight</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Robert</firstName>
+                <lastName>MacCready</lastName>
+                <nickname>MacCready</nickname>
+                <gender>Male</gender>
+                <age>13</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(180, 90, 65)</hairColor>
+                <hairDef>Mop</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 175, 155)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+            <!-- Signature Weapon -->
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.BallisticWeapons">
+                <uniqueItem>FCP_Gun_Chinese_Assault_Rifle</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Joseph -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Joseph_LittleLamplight</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Joseph_LittleLamplight</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Joseph</firstName>
+                <lastName />
+                <nickname>Joseph</nickname>
+                <gender>Male</gender>
+                <age>15</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(25, 20, 15)</hairColor>
+                <hairDef>FCP_Hair_Buzz_Cut</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(115, 80, 55)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Penny -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Penny_LittleLamplight</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Penny_LittleLamplight</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Penelope</firstName>
+                <lastName />
+                <nickname>Penny</nickname>
+                <gender>Female</gender>
+                <age>12</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(35, 25, 20)</hairColor>
+                <hairDef>FCP_Hair_Fairy_Tails</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(115, 80, 55)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Sibling</relation>
+                        <otherCharacter>FCP_Character_Joseph_LittleLamplight</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Lucy -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Lucy_LittleLamplight</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Lucy_LittleLamplight</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Lucia</firstName>
+                <lastName />
+                <nickname>Lucy</nickname>
+                <gender>Female</gender>
+                <age>11</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 60, 40)</hairColor>
+                <hairDef>FCP_Hair_No_Nonsense</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(205, 170, 140)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Knick Knack -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Knick_Knack</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Knick_Knack</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Nicholas</firstName>
+                <lastName />
+                <nickname>Knick Knack</nickname>
+                <gender>Male</gender>
+                <age>14</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(150, 110, 70)</hairColor>
+                <hairDef>FCP_Hair_Rude_Ridge</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Knock Knock -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Knock_Knock</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Knock_Knock</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Sue</firstName>
+                <lastName />
+                <nickname>Knock Knock</nickname>
+                <gender>Female</gender>
+                <age>14</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(150, 110, 70)</hairColor>
+                <hairDef>FCP_Hair_Unladylike</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Sibling</relation>
+                        <otherCharacter>FCP_Character_Knick_Knack</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Princess -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Princess_LittleLamplight</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Princess_LittleLamplight</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Angela</firstName>
+                <lastName />
+                <nickname>Princess</nickname>
+                <gender>Female</gender>
+                <age>12</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(210, 180, 90)</hairColor>
+                <hairDef>FCP_Hair_Prim_N_Proper</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(210, 175, 145)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <!-- Signature Weapon -->
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.BallisticWeapons">
+                <uniqueItem>FCP_Gun_SawnOff_Shotgun</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Biwwy -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Biwwy</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Biwwy</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Billy</firstName>
+                <lastName />
+                <nickname>Biwwy</nickname>
+                <gender>Male</gender>
+                <age>9</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(70, 50, 35)</hairColor>
+                <hairDef>Messy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(195, 160, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Bumble -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Bumble</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Bumble</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Betty</firstName>
+                <lastName />
+                <nickname>Bumble</nickname>
+                <gender>Female</gender>
+                <age>6</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(140, 105, 70)</hairColor>
+                <hairDef>FCP_Hair_Lil_Devil</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(205, 170, 140)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Zip -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Zip</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Zip</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Ricky</firstName>
+                <lastName />
+                <nickname>Zip</nickname>
+                <gender>Male</gender>
+                <age>9</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(60, 45, 30)</hairColor>
+                <hairDef>FCP_Hair_Terrosaur</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <!-- Traits -->
+            <li Class="FCP.Core.CharacterTraitsDefinition">
+                <traits>
+                    <li>
+                        <key>DrugDesire</key>
+                        <value>1</value>
+                    </li>
+                </traits>
+            </li>
+            <!-- Signature Weapon -->
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.BallisticWeapons">
+                <uniqueItem>FCP_Gun_Chinese_Pistol</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Sammy -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Sammy_LittleLamplight</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Sammy_LittleLamplight</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Sammy</firstName>
+                <lastName />
+                <nickname>Sammy</nickname>
+                <gender>Male</gender>
+                <age>10</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(80, 60, 40)</hairColor>
+                <hairDef>Messy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Squirrel -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Squirrel</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Squirrel</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Squirrel</firstName>
+                <lastName />
+                <nickname>Squirrel</nickname>
+                <gender>Male</gender>
+                <age>13</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 65, 45)</hairColor>
+                <hairDef>FCP_Hair_High_Riser</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(195, 160, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Eclair -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Eclair</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Eclair</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Eclair</firstName>
+                <lastName />
+                <nickname>Eclair</nickname>
+                <gender>Male</gender>
+                <age>13</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(55, 40, 30)</hairColor>
+                <hairDef>FCP_Hair_Buzz_Saw</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(190, 150, 120)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Sticky -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Sticky</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Sticky</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Jack</firstName>
+                <lastName />
+                <nickname>Sticky</nickname>
+                <gender>Male</gender>
+                <age>16</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(100, 75, 50)</hairColor>
+                <hairDef>FCP_Hair_Frazzled</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>Lover</relation>
+                        <otherCharacter>FCP_Character_Red</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--_____ Big Town _____-->
+
+    <!-- Pappy -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Pappy</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Pappy</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Pappy</nickname>
+                <gender>Male</gender>
+                <age>25</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 70, 50)</hairColor>
+                <hairDef>FCP_Hair_Mangy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(190, 150, 115)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Bittercup -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Bittercup</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Bittercup</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Bittercup</nickname>
+                <gender>Female</gender>
+                <age>19</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(40, 30, 25)</hairColor>
+                <hairDef>FCP_Hair_Punked</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(195, 160, 125)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <!-- Family -->
+            <li Class="FCP.Core.CharacterRelationDefinition">
+                <relations>
+                    <li>
+                        <relation>ExLover</relation>
+                        <otherCharacter>FCP_Character_Pappy</otherCharacter>
+                    </li>
+                </relations>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Flash -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Flash</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Flash</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Flash</nickname>
+                <gender>Male</gender>
+                <age>18</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(20, 15, 10)</hairColor>
+                <hairDef>FCP_Hair_Tunnel_Snake</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(185, 145, 110)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Kimba -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Kimba</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Kimba</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Kimba</nickname>
+                <gender>Female</gender>
+                <age>19</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(50, 35, 25)</hairColor>
+                <hairDef>FCP_Hair_Waster</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(170, 125, 95)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <!-- Signature Weapon -->
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.BallisticWeapons">
+                <uniqueItem>FCP_Gun_BB_Gun</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Dusty -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Dusty</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Dusty</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Dusty</nickname>
+                <gender>Male</gender>
+                <age>17</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(70, 55, 40)</hairColor>
+                <hairDef>FCP_Hair_Frazzled</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(180, 140, 105)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+            <!-- Signature Weapon -->
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.BallisticWeapons">
+                <uniqueItem>FCP_Gun_32_Hunting_Rifle</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Shorty -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Shorty</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Shorty</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Shorty</nickname>
+                <gender>Male</gender>
+                <age>17</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(30, 25, 20)</hairColor>
+                <hairDef>FCP_Hair_Buzz_Saw</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(175, 135, 100)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Timebomb -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Timebomb</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Timebomb</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Timebomb</nickname>
+                <gender>Male</gender>
+                <age>20</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(45, 35, 25)</hairColor>
+                <hairDef>Messy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(190, 150, 115)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--_____ Grayditch _____-->
+
+    <!-- Bryan Wilks -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Bryan_Wilks</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Bryan_Wilks</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Bryan</firstName>
+                <lastName>Wilks</lastName>
+                <nickname>Bryan Wilks</nickname>
+                <gender>Male</gender>
+                <age>8</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(80, 60, 40)</hairColor>
+                <hairDef>Messy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(195, 160, 125)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Weston Lesko -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Weston_Lesko</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Weston_Lesko</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Weston</firstName>
+                <lastName>Lesko</lastName>
+                <nickname>Doctor Lesko</nickname>
+                <gender>Male</gender>
+                <age>54</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(150, 145, 140)</hairColor>
+                <hairDef>FCP_Hair_Balding</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(205, 170, 140)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Thin</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--_____ Girdershade _____-->
+
+    <!-- Ronald Laren -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Ronald_Laren</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Ronald_Laren</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Ronald</firstName>
+                <lastName>Laren</lastName>
+                <nickname>Ronald Laren</nickname>
+                <gender>Male</gender>
+                <age>33</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(90, 85, 80)</hairColor>
+                <hairDef>Messy</hairDef>
+                <beardDef>Stubble</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+            <!-- Signature Weapon -->
+            <li Class="FCP.Core.CharacterUniqueItemDefinition" MayRequire="Rick.FCP.BallisticWeapons">
+                <uniqueItem>FCP_Gun_SawnOff_Shotgun</uniqueItem>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Sierra Petrovita -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Sierra_Petrovita</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Sierra_Petrovita</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Sierra</firstName>
+                <lastName>Petrovita</lastName>
+                <nickname>Sierra Petrovita</nickname>
+                <gender>Female</gender>
+                <age>26</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(210, 180, 90)</hairColor>
+                <hairDef>FCP_Hair_Frazzled</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(225, 190, 160)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!--_____ Canterbury Commons _____-->
+
+    <!-- Derek Pacion -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Derek_Pacion</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Derek_Pacion</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Derek</firstName>
+                <lastName>Pacion</lastName>
+                <nickname>Derek Pacion</nickname>
+                <gender>Male</gender>
+                <age>15</age>
+                <developmentalStage>Child</developmentalStage>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(60, 45, 30)</hairColor>
+                <hairDef>Messy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Joe Porter -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Joe_Porter</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Joe_Porter</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Joe</firstName>
+                <lastName>Porter</lastName>
+                <nickname>Porter Joe</nickname>
+                <gender>Male</gender>
+                <age>28</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(50, 35, 25)</hairColor>
+                <hairDef>FCP_Hair_Shaggy_Suave</hairDef>
+                <beardDef>Stubble</beardDef>
+                <skinColorOverride>(190, 150, 115)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Dominic D'Ellsadro -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Dominic_DEllsadro</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Dominic_DEllsadro</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName>Dominic</firstName>
+                <lastName>D'Ellsadro</lastName>
+                <nickname>Dominic</nickname>
+                <gender>Male</gender>
+                <age>40</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(30, 30, 30)</hairColor>
+                <hairDef>FCP_Hair_Buzz_Cut</hairDef>
+                <beardDef>Stubble</beardDef>
+                <skinColorOverride>(150, 110, 85)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </FCP.Core.CharacterDef>
+
+    <!-- Machete -->
+
+    <FCP.Core.CharacterDef>
+        <defName>FCP_Character_Machete</defName>
+        <pawnKind>FCP_Unique_Pawnkind_Wastelander_Machete</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <faction>FCP_Faction_Hidden_Wastelanders</faction>
+        <roles>
+        </roles>
+        <definitions>
+            <!-- Bio -->
+            <li Class="FCP.Core.CharacterStoryDefinition">
+                <firstName />
+                <lastName />
+                <nickname>Machete</nickname>
+                <gender>Female</gender>
+                <age>19</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="FCP.Core.CharacterAppearanceDefinition">
+                <hairColor>(50, 30, 20)</hairColor>
+                <hairDef>FCP_Hair_Frazzled</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(180, 140, 105)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+            <!-- No forced signature weapon: "Machete" is a nickname from a childhood mole rat kill
+                 with an oversized knife, not an equipped weapon class - Fallout 3 has no machete-type
+                 weapon at all (introduced later, in New Vegas/Fallout 4), and the pack has no combat
+                 knife ThingDef to stand in for it. -->
         </definitions>
     </FCP.Core.CharacterDef>
 

@@ -2866,6 +2866,7 @@
 			<Insulation_Heat>2</Insulation_Heat>
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
+		<generateCommonality>0.4</generateCommonality>
 		<apparel>
 			<bodyPartGroups>
 				<li>Neck</li>

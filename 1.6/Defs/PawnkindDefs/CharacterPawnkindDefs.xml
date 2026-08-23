@@ -370,7 +370,7 @@
 
     <!-- Gob -->
 
-    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+    <PawnKindDef ParentName="FCP_GhoulkindBase" MayRequire="Rick.FCP.Wastelanders,Rick.FCP.Ghouls">
         <defName>FCP_Unique_Pawnkind_Wastelander_Gob</defName>
         <label>Gob</label>
         <combatPower>15</combatPower>
@@ -453,19 +453,13 @@
 
     <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
         <defName>FCP_Unique_Pawnkind_Wastelander_Uncle_Roe</defName>
-        <label>Uncle Roe</label>
-        <combatPower>60</combatPower>
+        <label>Founder</label>
+        <combatPower>15</combatPower>
         <apparelRequired>
             <li>FCP_Apparel_Caravaneer_Outfit</li>
-            <li>FCP_Apparel_Sheriff_Hat</li>
         </apparelRequired>
-        <weaponMoney>500</weaponMoney>
-        <weaponTags>
-            <li>Gun</li>
-            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
-        </weaponTags>
         <requiredWorkTags>
-            <li>Violent</li>
+            <li>Social</li>
         </requiredWorkTags>
         <initialWillRange>1~3</initialWillRange>
         <initialResistanceRange>10~17</initialResistanceRange>
@@ -553,8 +547,7 @@
         </apparelRequired>
         <weaponMoney>450</weaponMoney>
         <weaponTags>
-            <li>Gun</li>
-            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_10mm_SMG</li>
         </weaponTags>
         <requiredWorkTags>
             <li>Violent</li>
@@ -568,6 +561,37 @@
                 </categoriesChildhood>
                 <categoriesAdulthood>
                     <li>FCP_Backstory_Wasteland_Harkness</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Commander Lana Danvers -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Lana_Danvers</defName>
+        <label>Commander Danvers</label>
+        <combatPower>60</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Rivet_City_Security_Armor</li>
+        </apparelRequired>
+        <weaponMoney>450</weaponMoney>
+        <weaponTags>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_10mm_SMG</li>
+        </weaponTags>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Lana_Danvers_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Lana_Danvers</li>
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>
@@ -595,6 +619,88 @@
                 </categoriesChildhood>
                 <categoriesAdulthood>
                     <li>FCP_Backstory_Wasteland_Abraham_Washington</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Nova -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Nova</defName>
+        <label>Nova</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Prostitute_Outfit_Female</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Nova_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Nova</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Carol -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Carol</defName>
+        <label>Innkeeper</label>
+        <trader>true</trader>
+        <combatPower>20</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Spring_Pre_War_Dress</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Carol_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Carol</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Red -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Red</defName>
+        <label>Doctor</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Doctor_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Red_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Red</li>
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>
@@ -914,6 +1020,124 @@
         <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
     </PawnKindDef>
 
+    <!-- Chet -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Trader_Chet</defName>
+        <label>General Store Keeper</label>
+        <trader>true</trader>
+        <combatPower>20</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Prospector_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Trader_Chet_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Trader_Chet</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Swank -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Swank</defName>
+        <label>Floor Boss</label>
+        <combatPower>25</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Fancy_Gambler_Suit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Swank_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Swank</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Cachino -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Cachino</defName>
+        <label>Cachino</label>
+        <combatPower>40</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Merc_Charmer_Suit</li>
+        </apparelRequired>
+        <weaponMoney>350</weaponMoney>
+        <weaponTags>
+            <li>Gun</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+        </weaponTags>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Cachino_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Cachino</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Mortimer -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Mortimer</defName>
+        <label>Mortimer</label>
+        <combatPower>30</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Business_Pre_War</li>
+        </apparelRequired>
+        <weaponMoney>100</weaponMoney>
+        <weaponTags>
+            <li>MeleeIndustrial</li>
+        </weaponTags>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Mortimer_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Mortimer</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
     <!--___ Commonwealth (Fallout 4) ___-->
 
     <!-- Kent Connolly -->
@@ -1076,6 +1300,94 @@
                 </categoriesChildhood>
                 <categoriesAdulthood>
                     <li>FCP_Backstory_Wasteland_Yefim_Bobrov</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Fahrenheit -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Fahrenheit</defName>
+        <label>Fahrenheit</label>
+        <combatPower>65</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Leather_Armor</li>
+        </apparelRequired>
+        <weaponMoney>450</weaponMoney>
+        <weaponTags>
+            <li>Gun</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Shotgun</li>
+        </weaponTags>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Fahrenheit_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Fahrenheit</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Arturo Rodriguez -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Trader_Arturo_Rodriguez</defName>
+        <label>Gunsmith</label>
+        <trader>true</trader>
+        <combatPower>25</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Merc_Cruiser_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Trader_Arturo_Rodriguez_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Trader_Arturo_Rodriguez</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Myrna -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Trader_Myrna</defName>
+        <label>Junk Trader</label>
+        <trader>true</trader>
+        <combatPower>20</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Field_Hand_Female_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Trader_Myrna_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Trader_Myrna</li>
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>
@@ -1344,6 +1656,2454 @@
                 </categoriesChildhood>
                 <categoriesAdulthood>
                     <li>FCP_Backstory_Wasteland_Renesco</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Metzger -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Metzger</defName>
+        <label>Metzger</label>
+        <combatPower>45</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Leather_Coat</li>
+        </apparelRequired>
+        <weaponMoney>300</weaponMoney>
+        <weaponTags>
+            <li>Gun</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+        </weaponTags>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Metzger_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Metzger</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Louis Salvatore -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Louis_Salvatore</defName>
+        <label>Louis Salvatore</label>
+        <combatPower>20</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Fancy_Gambler_Suit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Louis_Salvatore_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Louis_Salvatore</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!--_____ Megaton _____-->
+
+    <!-- Lucas Simms -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Lucas_Simms</defName>
+        <label>Sheriff</label>
+        <combatPower>30</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Sheriff_Duster</li>
+            <li>FCP_Apparel_Sheriff_Hat</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Lucas_Simms_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Lucas_Simms</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Harden Simms -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Harden_Simms</defName>
+        <label>Sheriff's son</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Harden_Simms_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Harden_Simms_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Manya Vargas -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Manya_Vargas</defName>
+        <label>Elder</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Female_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Manya_Vargas_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Manya_Vargas</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Nathan Vargas -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Nathan_Vargas</defName>
+        <label>Elder</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Merc_Adventurer_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Nathan_Vargas_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Nathan_Vargas</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Walter -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Walter</defName>
+        <label>Handyman</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Red_Rocket_Overalls</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Crafting</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Walter_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Walter</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Billy Creel -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Billy_Creel</defName>
+        <label>Scavenger</label>
+        <combatPower>20</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Merc_Adventurer_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Hauling</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Billy_Creel_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Billy_Creel</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Maggie -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Maggie</defName>
+        <label>Scavenger's daughter</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Female_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Maggie_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Maggie_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Jericho -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Jericho</defName>
+        <label>Mercenary</label>
+        <combatPower>35</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Leather_Armor</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Jericho_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Jericho</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Leo Stahl -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Leo_Stahl</defName>
+        <label>Bartender</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Business_Pre_War</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Cooking</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Leo_Stahl_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Leo_Stahl</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Andy Stahl -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Andy_Stahl</defName>
+        <label>Manager</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Business_Pre_War</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Andy_Stahl_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Andy_Stahl</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Jenny Stahl -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Jenny_Stahl</defName>
+        <label>Waitress</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Spring_Pre_War_Dress</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Cooking</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Jenny_Stahl_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Jenny_Stahl</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Stockholm -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Stockholm</defName>
+        <label>Guard</label>
+        <combatPower>30</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Combat_Armor</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Stockholm_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Stockholm</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Doc Church -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Doc_Church</defName>
+        <label>Doctor</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Doctor_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Doc_Church_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Doc_Church</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Lucy West -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Lucy_West</defName>
+        <label>Wanderer</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Female_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Lucy_West_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Lucy_West</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Rory Maclaren -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Rory_Maclaren</defName>
+        <label>Wanderer</label>
+        <combatPower>20</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Wanderer_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Rory_Maclaren_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Rory_Maclaren</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!--_____ Republic of Dave _____-->
+
+    <!-- Dave Wyatt -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Dave_Wyatt</defName>
+        <label>President</label>
+        <combatPower>20</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Merc_Adventurer_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Dave_Wyatt_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Dave_Wyatt</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Rosie -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Rosie</defName>
+        <label>First Lady</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Spring_Pre_War_Dress</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Rosie_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Rosie</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Jessica -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Jessica</defName>
+        <label>Second Wife</label>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Female_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Jessica_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Jessica</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Bob -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Bob</defName>
+        <label>Army Commander</label>
+        <combatPower>20</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Army_Uniform</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Bob_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Bob</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Shawna -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Shawna</defName>
+        <label>Teacher</label>
+        <combatPower>20</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Brahmin_Skin_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Shawna_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Shawna</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Mary -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Mary</defName>
+        <label>President's Daughter</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Female_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Mary_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Mary_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Rachael -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Rachael</defName>
+        <label>President's Daughter</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Female_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Rachael_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Rachael_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Ralph -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Ralph</defName>
+        <label>President's Son</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Ralph_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Ralph_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Flower -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Flower</defName>
+        <label>President's Daughter</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Female_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Flower_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Flower_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!--___ Arefu ___-->
+
+    <!-- Evan King -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Evan_King</defName>
+        <label>Settlement Defender</label>
+        <combatPower>30</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Merc_Adventurer_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Evan_King_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Evan_King</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Ken Ewers -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Ken_Ewers</defName>
+        <label>Repairman</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Wanderer_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Crafting</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Ken_Ewers_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Ken_Ewers</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Brailee Ewers -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Brailee_Ewers</defName>
+        <label>Homemaker</label>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Wanderer_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Brailee_Ewers_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Brailee_Ewers</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Karen Schenzy -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Karen_Schenzy</defName>
+        <label>Wanderer</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Wanderer_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Karen_Schenzy_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Karen_Schenzy</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!--___ Rivet City ___-->
+
+    <!-- Dr. Madison Li (Rivet City era) -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Madison_Li_Rivet_City</defName>
+        <label>Chief Scientist</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Lab_Coat_Capital</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Madison_Li_Rivet_City_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Madison_Li_Rivet_City</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Janice Kaplinski -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Janice_Kaplinski</defName>
+        <label>Botanist</label>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Lab_Coat_Capital</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Janice_Kaplinski_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Janice_Kaplinski</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Seagrave Holmes -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Seagrave_Holmes</defName>
+        <label>Salvager</label>
+        <trader>true</trader>
+        <combatPower>20</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Prospector_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Seagrave_Holmes_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Seagrave_Holmes</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Flak -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Flak</defName>
+        <label>Arms Dealer</label>
+        <trader>true</trader>
+        <combatPower>35</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Merc_Adventurer_Outfit</li>
+        </apparelRequired>
+        <weaponMoney>300</weaponMoney>
+        <weaponTags>
+            <li>Gun</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+        </weaponTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Flak_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Flak</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Shrapnel -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Shrapnel</defName>
+        <label>Arms Dealer</label>
+        <trader>true</trader>
+        <combatPower>30</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Leather_Armor</li>
+        </apparelRequired>
+        <weaponMoney>250</weaponMoney>
+        <weaponTags>
+            <li>Gun</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+        </weaponTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Shrapnel_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Shrapnel</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Cindy Cantelli -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Cindy_Cantelli</defName>
+        <label>Chem Dealer</label>
+        <trader>true</trader>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Female_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Cindy_Cantelli_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Cindy_Cantelli</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Paulie Cantelli -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Paulie_Cantelli</defName>
+        <label>Dispensary Co-Owner</label>
+        <trader>true</trader>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Paulie_Cantelli_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Paulie_Cantelli</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Gary Staley -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Gary_Staley</defName>
+        <label>Diner Owner</label>
+        <trader>true</trader>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Gary_Staley_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Gary_Staley</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Horace Pinkerton -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Horace_Pinkerton</defName>
+        <label>Reclusive Surgeon</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Doctor_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Horace_Pinkerton_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Horace_Pinkerton</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Vera Weatherly -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Vera_Weatherly</defName>
+        <label>Hotel Owner</label>
+        <trader>true</trader>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Fancy_Gambler_Dress</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Vera_Weatherly_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Vera_Weatherly</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Doctor Preston -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Doctor_Preston</defName>
+        <label>Doctor</label>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Doctor_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Doctor_Preston_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Doctor_Preston</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Father Clifford -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Father_Clifford</defName>
+        <label>Priest</label>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Business_Pre_War</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Father_Clifford_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Father_Clifford</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!--___ Underworld ___-->
+
+    <!-- Winthrop -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Winthrop</defName>
+        <label>Engineer</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Red_Rocket_Overalls</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Crafting</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Winthrop_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Winthrop</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Ahzrukhal -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Ahzrukhal</defName>
+        <label>Barkeep</label>
+        <trader>true</trader>
+        <combatPower>20</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Merc_Charmer_Suit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Ahzrukhal_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Ahzrukhal</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Greta -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Greta</defName>
+        <label>Cook</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Female_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Greta_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Greta</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Doctor Barrows -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Doctor_Barrows</defName>
+        <label>Doctor</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Doctor_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Doctor_Barrows_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Doctor_Barrows</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Nurse Graves -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Nurse_Graves</defName>
+        <label>Nurse</label>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Doctor_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Nurse_Graves_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Nurse_Graves</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Snowflake -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Snowflake</defName>
+        <label>Barber</label>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Wanderer_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Snowflake_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Snowflake</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Willow -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Willow</defName>
+        <label>Sentry</label>
+        <combatPower>45</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Leather_Armor</li>
+        </apparelRequired>
+        <weaponMoney>350</weaponMoney>
+        <weaponTags>
+            <li>Gun</li>
+            <li MayRequire="Rick.FCP.EnergyWeapons">FCP_Energy_Weapon</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+        </weaponTags>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Willow_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Willow</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Patchwork -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Patchwork</defName>
+        <label>Regular</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Wanderer_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Patchwork_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Patchwork</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Mister Crowley -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Mister_Crowley</defName>
+        <label>Survivor</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Wanderer_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Mister_Crowley_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Mister_Crowley</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Quinn -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Quinn</defName>
+        <label>Wandering Trader</label>
+        <trader>true</trader>
+        <combatPower>35</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Caravaneer_Outfit</li>
+        </apparelRequired>
+        <weaponMoney>400</weaponMoney>
+        <weaponTags>
+            <li>Gun</li>
+            <li MayRequire="Rick.FCP.BallisticWeapons">FCP_Pistol</li>
+        </weaponTags>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Quinn_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Quinn</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!--___ Tenpenny Tower ___-->
+
+    <!-- Allistair Tenpenny -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Allistair_Tenpenny</defName>
+        <label>Tower Owner</label>
+        <combatPower>40</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Benny_Pre_War_Fancy_Suit_Clean</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Allistair_Tenpenny_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Allistair_Tenpenny</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Chief Gustavo -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Gustavo</defName>
+        <label>Security Chief</label>
+        <combatPower>55</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Combat_Armor_Light</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Gustavo_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Gustavo</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Herbert Dashwood -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Herbert_Dashwood</defName>
+        <label>Retired Adventurer</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Merc_Adventurer_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Herbert_Dashwood_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Herbert_Dashwood</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Doctor Julius Banfield -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Julius_Banfield</defName>
+        <label>Doctor</label>
+        <trader>true</trader>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Lab_Coat_Capital</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Julius_Banfield_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Julius_Banfield</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Susan Lancaster -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Susan_Lancaster</defName>
+        <label>Escort</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Spring_Pre_War_Dress</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Susan_Lancaster_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Susan_Lancaster</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Edgar Wellington II -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Edgar_Wellington</defName>
+        <label>Tower Investor</label>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Business_Pre_War</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Edgar_Wellington_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Edgar_Wellington</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Millicent Wellington -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Millicent_Wellington</defName>
+        <label>Tower Socialite</label>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Fancy_Gambler_Dress</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Millicent_Wellington_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Millicent_Wellington</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Anthony Ling -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Anthony_Ling</defName>
+        <label>Clothier</label>
+        <trader>true</trader>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Merc_Charmer_Suit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Anthony_Ling_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Anthony_Ling</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Lydia Montenegro -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Lydia_Montenegro</defName>
+        <label>Shopkeeper</label>
+        <trader>true</trader>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Merc_Charmer_Dress</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Lydia_Montenegro_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Lydia_Montenegro</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Margaret Primrose -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Margaret_Primrose</defName>
+        <label>Cafe Owner</label>
+        <trader>true</trader>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Female_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Margaret_Primrose_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Margaret_Primrose</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!--_____ Little Lamplight _____-->
+
+    <!-- MacCready -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_MacCready_LittleLamplight</defName>
+        <label>Mayor</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Merc_Adventurer_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_MacCready_LittleLamplight_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_MacCready_LittleLamplight_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Joseph -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Joseph_LittleLamplight</defName>
+        <label>Teacher</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Athletic_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Joseph_LittleLamplight_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Joseph_LittleLamplight_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Penny -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Penny_LittleLamplight</defName>
+        <label>Scavenger</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Female_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Animals</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Penny_LittleLamplight_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Penny_LittleLamplight_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Lucy -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Lucy_LittleLamplight</defName>
+        <label>Doctor</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Doctor_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Lucy_LittleLamplight_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Lucy_LittleLamplight_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Knick Knack -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Knick_Knack</defName>
+        <label>Shopkeeper</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Knick_Knack_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Knick_Knack_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Knock Knock -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Knock_Knock</defName>
+        <label>Morale Officer</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Female_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Knock_Knock_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Knock_Knock_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Princess -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Princess_LittleLamplight</defName>
+        <label>Gate Guard</label>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Female_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Princess_LittleLamplight_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Princess_LittleLamplight_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Biwwy -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Biwwy</defName>
+        <label>Outcast</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Biwwy_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Biwwy_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Bumble -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Bumble</defName>
+        <label>Youngest</label>
+        <combatPower>3</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Female_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Bumble_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Bumble_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Zip -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Zip</defName>
+        <label>Scout</label>
+        <combatPower>8</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Zip_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Zip_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Sammy -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Sammy_LittleLamplight</defName>
+        <label>Scavenger</label>
+        <combatPower>8</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Sammy_LittleLamplight_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Sammy_LittleLamplight_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Squirrel -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Squirrel</defName>
+        <label>Tech Scavenger</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Squirrel_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Squirrel_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Eclair -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Eclair</defName>
+        <label>Cook</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Cooking</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Eclair_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Eclair_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Sticky -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Sticky</defName>
+        <label>Exile-to-Be</label>
+        <combatPower>8</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Sticky_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Sticky</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!--_____ Big Town _____-->
+
+    <!-- Pappy -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Pappy</defName>
+        <label>Repairman</label>
+        <combatPower>8</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Wanderer_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Pappy_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Pappy</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Bittercup -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Bittercup</defName>
+        <label>Night Patrol</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Female_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Bittercup_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Bittercup</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Flash -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Flash</defName>
+        <label>Day Patrol</label>
+        <combatPower>6</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Flash_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Flash</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Kimba -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Kimba</defName>
+        <label>Scavenger</label>
+        <combatPower>6</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Field_Hand_Female_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Kimba_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Kimba</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Dusty -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Dusty</defName>
+        <label>Watchman</label>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Prospector_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Dusty_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Dusty</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Shorty -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Shorty</defName>
+        <label>Scavenger</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Shorty_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Shorty</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Timebomb -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Timebomb</defName>
+        <label>Survivor</label>
+        <combatPower>4</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Timebomb_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Timebomb</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!--_____ Grayditch _____-->
+
+    <!-- Bryan Wilks -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Bryan_Wilks</defName>
+        <label>Lost Boy</label>
+        <combatPower>4</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Bryan_Wilks_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Bryan_Wilks_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Weston Lesko -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Weston_Lesko</defName>
+        <label>Entomologist</label>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Lab_Coat_Capital</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Weston_Lesko_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Weston_Lesko</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!--_____ Girdershade _____-->
+
+    <!-- Ronald Laren -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Ronald_Laren</defName>
+        <label>Drifter</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Leather_Armor</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Ronald_Laren_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Ronald_Laren</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Sierra Petrovita -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Sierra_Petrovita</defName>
+        <label>Collector</label>
+        <combatPower>5</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Wasteland_Wanderer_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Sierra_Petrovita_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Sierra_Petrovita</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!--_____ Canterbury Commons _____-->
+
+    <!-- Derek Pacion -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Derek_Pacion</defName>
+        <label>Uncle's Nephew</label>
+        <combatPower>4</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Derek_Pacion_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Derek_Pacion_Child</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Joe Porter -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Joe_Porter</defName>
+        <label>Shopkeeper</label>
+        <trader>true</trader>
+        <combatPower>10</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Settler_Male_Outfit</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Joe_Porter_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Joe_Porter</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Dominic D'Ellsadro -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Dominic_DEllsadro</defName>
+        <label>Town Guard</label>
+        <combatPower>25</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Combat_Armor</li>
+            <li>FCP_Apparel_Combat_Helmet</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Dominic_DEllsadro_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Dominic_DEllsadro</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+    </PawnKindDef>
+
+    <!-- Machete -->
+
+    <PawnKindDef ParentName="FCP_WastelanderkindBase" MayRequire="Rick.FCP.Wastelanders">
+        <defName>FCP_Unique_Pawnkind_Wastelander_Machete</defName>
+        <label>Junior Enforcer</label>
+        <combatPower>15</combatPower>
+        <apparelRequired>
+            <li>FCP_Apparel_Leather_Armor</li>
+        </apparelRequired>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <backstoryFiltersOverride Inherit="False">
+            <li>
+                <categoriesChildhood>
+                    <li>FCP_Backstory_Wasteland_Machete_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FCP_Backstory_Wasteland_Machete</li>
                 </categoriesAdulthood>
             </li>
         </backstoryFiltersOverride>

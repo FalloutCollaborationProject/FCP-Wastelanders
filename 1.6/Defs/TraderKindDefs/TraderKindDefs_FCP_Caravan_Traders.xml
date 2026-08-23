@@ -425,7 +425,7 @@
 
     <TraderKindDef>
         <defName>FCP_Caravan_Banon</defName>
-        <label>Banon</label>
+        <label>Bannon</label>
         <stockGenerators>
 
             <!--__ Selling __-->
@@ -699,7 +699,7 @@
                 <countRange>2~6</countRange>
             </li>
 
-            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems">
+            <li Class="StockGenerator_SingleDef" MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                 <thingDef>FCP_Chem_Mentats</thingDef>
                 <countRange>2~6</countRange>
             </li>

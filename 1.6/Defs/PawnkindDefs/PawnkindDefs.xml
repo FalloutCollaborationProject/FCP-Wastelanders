@@ -273,7 +273,7 @@
         <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
         <combatPower>50</combatPower>
         <gearHealthRange>1~1.8</gearHealthRange>
-        <apparelMoney>1000~2000</apparelMoney>
+        <apparelMoney>0</apparelMoney>
         <weaponMoney>1000</weaponMoney>
         <weaponTags>
             <li>IndustrialGunAdvanced</li>

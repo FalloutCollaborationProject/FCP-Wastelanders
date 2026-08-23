@@ -385,12 +385,12 @@
                     <li>FCP_Chem_Hydra</li>
                     <li>FCP_Chem_Doctors_Bag</li>
                     <li>FCP_Chem_Blood_Pack</li>
-                    <li>FCP_Chem_Healing_Powder</li>
+                    <li MayRequire="Rick.FCP.Plants">FCP_Chem_Healing_Powder</li>
                 </thingDefs>
             </li>
 
             <!-- Addiction Treatment -->
-            <li Class="StockGenerator_MultiDef" MayRequire="Rick.FCP.Chems">
+            <li Class="StockGenerator_MultiDef" MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
                 <thingDefs>
                     <li>FCP_Chem_Addictol</li>
                     <li>FCP_Chem_Fixer</li>
@@ -458,20 +458,20 @@
                     <li>FCP_Chem_Rocket</li>
                     <li>FCP_Chem_Psycho</li>
                     <li>FCP_Chem_Buffout</li>
-                    <li>FCP_Chem_Mentats</li>
-                    <li>FCP_Chem_Berry_Mentats</li>
-                    <li>FCP_Chem_Grape_Mentats</li>
-                    <li>FCP_Chem_Orange_Mentats</li>
-                    <li>FCP_Chem_Party_Time_Mentats</li>
+                    <li MayRequire="Rick.FCP.Plants">FCP_Chem_Mentats</li>
+                    <li MayRequire="Rick.FCP.Plants">FCP_Chem_Berry_Mentats</li>
+                    <li MayRequire="Rick.FCP.Plants">FCP_Chem_Grape_Mentats</li>
+                    <li MayRequire="Rick.FCP.Plants">FCP_Chem_Orange_Mentats</li>
+                    <li MayRequire="Rick.FCP.Plants">FCP_Chem_Party_Time_Mentats</li>
                     <li>FCP_Chem_Turbo</li>
                     <li>FCP_Chem_Slasher</li>
-                    <li>FCP_Chem_Steady</li>
-                    <li>FCP_Chem_Cateye</li>
+                    <li MayRequire="Rick.FCP.Plants">FCP_Chem_Steady</li>
+                    <li MayRequire="Rick.FCP.Plants">FCP_Chem_Cateye</li>
                     <li>FCP_Chem_MedX</li>
                     <li>FCP_Chem_Day_Tripper</li>
                     <li>FCP_Chem_X_Cell</li>
-                    <li>FCP_Chem_Daddy_O</li>
-                    <li>FCP_Chem_Rebound</li>
+                    <li MayRequire="Rick.FCP.Plants">FCP_Chem_Daddy_O</li>
+                    <li MayRequire="Rick.FCP.Plants">FCP_Chem_Rebound</li>
                 </thingDefs>
             </li>
 

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--__________ Underworld Settlement Traders __________-->
+
+    <!-- Underworld Outfitters -->
+
+    <TraderKindDef>
+        <defName>FCP_Trader_Underworld_Outfitters</defName>
+        <label>Underworld Outfitters</label>
+        <stockGenerators>
+
+            <!-- Resources -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>900~1800</countRange>
+            </li>
+
+            <!-- Wasteland Clothing -->
+            <li Class="StockGenerator_MultiDef">
+                <thingDefs>
+                    <li>FCP_Apparel_Wasteland_Wanderer_Outfit</li>
+                    <li>FCP_Apparel_Merc_Adventurer_Outfit</li>
+                    <li>FCP_Apparel_Prospector_Outfit</li>
+                    <li>FCP_Apparel_Surveyor_Outfit</li>
+                    <li>FCP_Apparel_Caravaneer_Outfit</li>
+                    <li>FCP_Apparel_Settler_Female_Outfit</li>
+                    <li>FCP_Apparel_Settler_Male_Outfit</li>
+                    <li>FCP_Apparel_Leather_Coat</li>
+                </thingDefs>
+            </li>
+
+            <!-- Apparel -->
+            <li Class="StockGenerator_MarketValue">
+                <tradeTag>BasicClothing</tradeTag>
+                <countRange>4~8</countRange>
+            </li>
+            <li Class="StockGenerator_MarketValue">
+                <tradeTag>Clothing</tradeTag>
+                <countRange>2~4</countRange>
+            </li>
+
+            <!-- Surplus Armor -->
+            <li Class="StockGenerator_MultiDef">
+                <thingDefs>
+                    <li>FCP_Apparel_Leather_Armor</li>
+                    <li>FCP_Apparel_Metal_Armor</li>
+                </thingDefs>
+            </li>
+
+            <!-- Headgear -->
+            <li Class="StockGenerator_MultiDef">
+                <thingDefs>
+                    <li>FCP_Apparel_Wrapped_Cap</li>
+                    <li>FCP_Apparel_Gasmask_Goggles</li>
+                </thingDefs>
+            </li>
+
+            <!-- Surplus Ballistic Weapons -->
+            <li Class="StockGenerator_MultiDef" MayRequire="Rick.FCP.BallisticWeapons">
+                <thingDefs>
+                    <li>FCP_Gun_10mm_Pistol</li>
+                    <li>FCP_Gun_Chinese_Pistol</li>
+                    <li>FCP_Gun_32_Hunting_Rifle</li>
+                </thingDefs>
+            </li>
+
+            <!-- Buying -->
+            <li Class="StockGenerator_BuyExpensiveSimple" />
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>Clothing</tag>
+            </li>
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>Armor</tag>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>Textiles</categoryDef>
+            </li>
+
+        </stockGenerators>
+    </TraderKindDef>
+
+    <!-- The Ninth Circle -->
+
+    <TraderKindDef>
+        <defName>FCP_Trader_Underworld_NinthCircle</defName>
+        <label>The Ninth Circle</label>
+        <stockGenerators>
+
+            <!-- Resources -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>1200~2400</countRange>
+            </li>
+
+            <!-- Alcohol -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Beer</thingDef>
+                <countRange>25~65</countRange>
+            </li>
+
+            <!-- Nuka-Cola -->
+            <li Class="StockGenerator_MultiDef" MayRequire="Rick.FCP.NukaCola">
+                <thingDefs>
+                    <li>FCP_Nuka_Cola</li>
+                    <li>FCP_Nuka_Cola_Classic</li>
+                </thingDefs>
+            </li>
+
+            <!-- Recreational Chems -->
+            <li Class="StockGenerator_MultiDef" MayRequire="Rick.FCP.Chems">
+                <thingDefs>
+                    <li>FCP_Chem_Jet</li>
+                    <li>FCP_Chem_Buffout</li>
+                    <li>FCP_Chem_Psycho</li>
+                    <li MayRequire="Rick.FCP.Plants">FCP_Chem_Mentats</li>
+                </thingDefs>
+            </li>
+
+            <!-- Drugs -->
+            <li Class="StockGenerator_Category">
+                <categoryDef>Drugs</categoryDef>
+                <thingDefCountRange>3~5</thingDefCountRange>
+                <totalPriceRange>600~1400</totalPriceRange>
+            </li>
+
+            <!-- Bar Snacks -->
+            <li Class="StockGenerator_MultiDef" MayRequire="Rick.FCP.WastelandFood">
+                <thingDefs>
+                    <li>FCP_Food_Sausages</li>
+                    <li>FCP_Food_Sweet_Rolls</li>
+                </thingDefs>
+            </li>
+
+            <!-- Food -->
+            <li Class="StockGenerator_Category">
+                <categoryDef>FoodMeals</categoryDef>
+                <thingDefCountRange>1~2</thingDefCountRange>
+                <countRange>10~25</countRange>
+            </li>
+
+            <!-- Buying -->
+            <li Class="StockGenerator_BuyExpensiveSimple" />
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>Drugs</tag>
+            </li>
+
+        </stockGenerators>
+    </TraderKindDef>
+
+    <!-- Carol's Place -->
+
+    <TraderKindDef>
+        <defName>FCP_Trader_Underworld_CarolsPlace</defName>
+        <label>Carol's Place</label>
+        <stockGenerators>
+
+            <!-- Resources -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>700~1400</countRange>
+            </li>
+
+            <!-- Nuka-Cola -->
+            <li Class="StockGenerator_MultiDef" MayRequire="Rick.FCP.NukaCola">
+                <thingDefs>
+                    <li>FCP_Nuka_Cola</li>
+                    <li>FCP_Nuka_Cola_Classic</li>
+                    <li>FCP_Nuka_Cola_Cherry</li>
+                </thingDefs>
+            </li>
+
+            <!-- Pre-War Food -->
+            <li Class="StockGenerator_MultiDef" MayRequire="Rick.FCP.PreWarFood">
+                <thingDefs>
+                    <li>FCP_Food_Cram</li>
+                    <li>FCP_Food_Blamco_Original_Flavor</li>
+                    <li>FCP_Food_Insta_Mash</li>
+                </thingDefs>
+            </li>
+
+            <!-- Wasteland Plants and Produce -->
+            <li Class="StockGenerator_MultiDef" MayRequire="Rick.FCP.Plants">
+                <thingDefs>
+                    <li>FCP_Raw_Mutfruit</li>
+                    <li>FCP_Raw_Tato</li>
+                    <li>FCP_Raw_Carrot</li>
+                    <li>FCP_Raw_Melon</li>
+                </thingDefs>
+            </li>
+
+            <!-- Wasteland Prepared Meals -->
+            <li Class="StockGenerator_MultiDef" MayRequire="Rick.FCP.WastelandFood">
+                <thingDefs>
+                    <li>FCP_Food_Brahmin_Pot_Pie</li>
+                    <li>FCP_Food_Crispy_Wings</li>
+                    <li>FCP_Food_Meat_On_A_Stick</li>
+                    <li>FCP_Food_Noodle_Cup</li>
+                    <li>FCP_Food_Chicken_Noodle_Cup</li>
+                </thingDefs>
+            </li>
+
+            <!-- Food -->
+            <li Class="StockGenerator_Category">
+                <categoryDef>Foods</categoryDef>
+                <thingDefCountRange>4~7</thingDefCountRange>
+                <totalPriceRange>400~1000</totalPriceRange>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>FoodMeals</categoryDef>
+                <thingDefCountRange>2~3</thingDefCountRange>
+                <countRange>15~40</countRange>
+            </li>
+
+            <!-- Buying -->
+            <li Class="StockGenerator_BuyExpensiveSimple" />
+            <li Class="StockGenerator_Category">
+                <categoryDef>FoodRaw</categoryDef>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>PlantMatter</categoryDef>
+            </li>
+
+        </stockGenerators>
+    </TraderKindDef>
+
+    <!-- The Chop Shop -->
+
+    <TraderKindDef>
+        <defName>FCP_Trader_Underworld_ChopShop</defName>
+        <label>The Chop Shop</label>
+        <stockGenerators>
+
+            <!-- Resources -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>1000~2000</countRange>
+            </li>
+
+            <!-- Medicine -->
+            <li Class="StockGenerator_Category">
+                <categoryDef>Medicine</categoryDef>
+                <thingDefCountRange>2~3</thingDefCountRange>
+                <countRange>25~70</countRange>
+            </li>
+
+            <!-- Stimpaks -->
+            <li Class="StockGenerator_MultiDef" MayRequire="Rick.FCP.Chems">
+                <thingDefs>
+                    <li>FCP_Chem_Stimpak</li>
+                    <li>FCP_Chem_Diluted_Stimpak</li>
+                </thingDefs>
+            </li>
+
+            <!-- Medical Chems -->
+            <li Class="StockGenerator_MultiDef" MayRequire="Rick.FCP.Chems">
+                <thingDefs>
+                    <li>FCP_Chem_MedX</li>
+                    <li>FCP_Chem_RadX</li>
+                    <li>FCP_Chem_Radaway</li>
+                    <li>FCP_Chem_Doctors_Bag</li>
+                    <li MayRequire="Rick.FCP.Plants">FCP_Chem_Healing_Powder</li>
+                </thingDefs>
+            </li>
+
+            <!-- Addiction Treatment -->
+            <li Class="StockGenerator_MultiDef" MayRequire="Rick.FCP.Chems,Rick.FCP.Plants">
+                <thingDefs>
+                    <li>FCP_Chem_Addictol</li>
+                    <li>FCP_Chem_Fixer</li>
+                </thingDefs>
+            </li>
+
+            <!-- Buying -->
+            <li Class="StockGenerator_BuyExpensiveSimple" />
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>Drugs</tag>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>Medicine</categoryDef>
+            </li>
+
+        </stockGenerators>
+    </TraderKindDef>
+
+</Defs>
