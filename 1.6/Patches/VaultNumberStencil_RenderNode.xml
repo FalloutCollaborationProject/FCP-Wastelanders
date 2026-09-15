@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- Vault Number Stencil Render Node -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnRenderTreeDef[defName="Humanlike"]/root/children/li[debugLabel="Body"]/children</xpath>
+		<value>
+			<li Class="FCP.Core.PawnRenderNodeProperties_VaultNumberStencil">
+				<debugLabel>Vault number stencil</debugLabel>
+				<nodeClass>FCP.Core.PawnRenderNode_VaultNumberStencil</nodeClass>
+				<workerClass>FCP.Core.PawnRenderNodeWorker_VaultNumberStencil</workerClass>
+				<targetGroup>Torso</targetGroup>
+				<baseLayer>31</baseLayer>
+				<drawData>
+					<dataNorth>
+						<offset>(0, 0, -0.16)</offset>
+					</dataNorth>
+				</drawData>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

@@ -123,14 +123,6 @@
                 <countRange>1~5</countRange>
             </li>
 
-            <!-- Vanilla Apparel -->
-
-            <li Class="StockGenerator_Category">
-                <categoryDef>Apparel</categoryDef>
-                <thingDefCountRange>5~10</thingDefCountRange>
-                <countRange>2~6</countRange>
-            </li>
-
             <!--__ Buying __-->
 
             <li Class="StockGenerator_BuyTradeTag"><tag>FCP_Wastelander_Apparel</tag></li>
@@ -440,12 +432,6 @@
                 <tradeTag>FCP_Pre_War_Apparel</tradeTag>
                 <thingDefCountRange>3~6</thingDefCountRange>
                 <countRange>2~6</countRange>
-            </li>
-
-            <li Class="StockGenerator_Category">
-                <categoryDef>Apparel</categoryDef>
-                <thingDefCountRange>4~8</thingDefCountRange>
-                <countRange>1~4</countRange>
             </li>
 
             <!--__ Buying __-->

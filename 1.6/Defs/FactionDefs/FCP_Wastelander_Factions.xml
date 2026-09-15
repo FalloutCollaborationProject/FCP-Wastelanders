@@ -105,6 +105,9 @@
 				<namedSettlements>
 					<li>
 						<name>Megaton</name>
+						<prefab>FCP_Prefab_Megaton</prefab>
+						<mapGenerator>FCP_MapGen_Settlement_Prefab</mapGenerator>
+						<forcedMapSize>(90, 1, 90)</forcedMapSize>
 						<guaranteedCharacters>
 							<li>FCP_Character_Moira_Brown</li>
 							<li>FCP_Character_Colin_Moriarty</li>

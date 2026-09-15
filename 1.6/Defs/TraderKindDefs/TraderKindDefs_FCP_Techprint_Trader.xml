@@ -43,7 +43,7 @@
             </li>
 
             <!-- Tech Items -->
-            <li MayRequire="FCP.Tools" Class="StockGenerator_SingleDef">
+            <li MayRequire="Rick.FCP.Core.Tools" Class="StockGenerator_SingleDef">
                 <thingDef>FCP_Item_Fusion_Core</thingDef>
                 <countRange>1~4</countRange>
             </li>

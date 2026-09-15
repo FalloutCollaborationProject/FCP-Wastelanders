@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <PrefabDef>
+        <defName>FCP_Prefab_Megaton</defName>
+        <size>(72,72)</size>
+        <rotations>North</rotations>
+        <terrain>
+            <MetalTile>
+                <rects>
+                    <li>(0,0,71,71)</li>
+                </rects>
+            </MetalTile>
+        </terrain>
+        <things>
+
+            <!-- Perimeter crater wall, built from salvaged scrap plating in a rough octagon around the bomb crater -->
+
+            <Wall>
+                <rects>
+                    <li>(15,1,56,1)</li>
+                    <li>(15,70,33,70)</li>
+                    <li>(37,70,56,70)</li>
+                    <li>(1,15,1,56)</li>
+                    <li>(70,15,70,56)</li>
+                    <li>(56,1,57,1)</li>
+                    <li>(57,2,58,2)</li>
+                    <li>(58,3,59,3)</li>
+                    <li>(59,4,60,4)</li>
+                    <li>(60,5,61,5)</li>
+                    <li>(61,6,62,6)</li>
+                    <li>(62,7,63,7)</li>
+                    <li>(63,8,64,8)</li>
+                    <li>(64,9,65,9)</li>
+                    <li>(65,10,66,10)</li>
+                    <li>(66,11,67,11)</li>
+                    <li>(67,12,68,12)</li>
+                    <li>(68,13,69,13)</li>
+                    <li>(69,14,70,14)</li>
+                    <li>(14,1,15,1)</li>
+                    <li>(13,2,14,2)</li>
+                    <li>(12,3,13,3)</li>
+                    <li>(11,4,12,4)</li>
+                    <li>(10,5,11,5)</li>
+                    <li>(9,6,10,6)</li>
+                    <li>(8,7,9,7)</li>
+                    <li>(7,8,8,8)</li>
+                    <li>(6,9,7,9)</li>
+                    <li>(5,10,6,10)</li>
+                    <li>(4,11,5,11)</li>
+                    <li>(3,12,4,12)</li>
+                    <li>(2,13,3,13)</li>
+                    <li>(1,14,2,14)</li>
+                    <li>(69,56,70,56)</li>
+                    <li>(68,57,69,57)</li>
+                    <li>(67,58,68,58)</li>
+                    <li>(66,59,67,59)</li>
+                    <li>(65,60,66,60)</li>
+                    <li>(64,61,65,61)</li>
+                    <li>(63,62,64,62)</li>
+                    <li>(62,63,63,63)</li>
+                    <li>(61,64,62,64)</li>
+                    <li>(60,65,61,65)</li>
+                    <li>(59,66,60,66)</li>
+                    <li>(58,67,59,67)</li>
+                    <li>(57,68,58,68)</li>
+                    <li>(56,69,57,69)</li>
+                    <li>(1,56,2,56)</li>
+                    <li>(2,57,3,57)</li>
+                    <li>(3,58,4,58)</li>
+                    <li>(4,59,5,59)</li>
+                    <li>(5,60,6,60)</li>
+                    <li>(6,61,7,61)</li>
+                    <li>(7,62,8,62)</li>
+                    <li>(8,63,9,63)</li>
+                    <li>(9,64,10,64)</li>
+                    <li>(10,65,11,65)</li>
+                    <li>(11,66,12,66)</li>
+                    <li>(12,67,13,67)</li>
+                    <li>(13,68,14,68)</li>
+                    <li>(14,69,15,69)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Wall>
+
+            <!-- Main gate, south side facing the Capital Wasteland approach -->
+
+            <Door>
+                <rects>
+                    <li>(34,70,36,70)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+            <!-- Moriarty's Saloon (Colin Moriarty, Gob, Nova) - sits at the highest point of the crater rim -->
+
+            <Wall>
+                <rects>
+                    <li>(24,6,40,6)</li>
+                    <li>(24,6,24,16)</li>
+                    <li>(40,6,40,16)</li>
+                    <li>(24,16,30,16)</li>
+                    <li>(34,16,40,16)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Wall>
+            <Door>
+                <rects>
+                    <li>(31,16,33,16)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+            <!-- Children of Atom Church - built hard against the crater floor, overlooking the bomb -->
+
+            <Wall>
+                <rects>
+                    <li>(26,18,40,18)</li>
+                    <li>(26,18,26,23)</li>
+                    <li>(40,18,40,23)</li>
+                    <li>(26,23,31,23)</li>
+                    <li>(35,23,40,23)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Wall>
+            <Door>
+                <rects>
+                    <li>(32,23,34,23)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+            <!-- Sheriff's Office (Lucas Simms, Harden Simms) -->
+
+            <Wall>
+                <rects>
+                    <li>(50,14,62,14)</li>
+                    <li>(50,14,50,25)</li>
+                    <li>(62,14,62,25)</li>
+                    <li>(50,25,54,25)</li>
+                    <li>(58,25,62,25)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Wall>
+            <Door>
+                <rects>
+                    <li>(55,25,56,25)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+            <!-- Water Treatment Plant (Walter) -->
+
+            <Wall>
+                <rects>
+                    <li>(52,28,66,28)</li>
+                    <li>(66,28,66,40)</li>
+                    <li>(52,40,66,40)</li>
+                    <li>(52,28,52,32)</li>
+                    <li>(52,35,52,40)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Wall>
+            <Door>
+                <rects>
+                    <li>(52,33,52,34)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+            <!-- Craterside Supply (Moira Brown) -->
+
+            <Wall>
+                <rects>
+                    <li>(52,43,65,43)</li>
+                    <li>(65,43,65,54)</li>
+                    <li>(52,54,65,54)</li>
+                    <li>(52,43,52,47)</li>
+                    <li>(52,50,52,54)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Wall>
+            <Door>
+                <rects>
+                    <li>(52,48,52,49)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+            <!-- Vargas House (Manya Vargas, Nathan Vargas) -->
+
+            <Wall>
+                <rects>
+                    <li>(50,58,58,58)</li>
+                    <li>(58,58,58,64)</li>
+                    <li>(50,64,58,64)</li>
+                    <li>(50,58,50,59)</li>
+                    <li>(50,62,50,64)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Wall>
+            <Door>
+                <rects>
+                    <li>(50,60,50,61)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+            <!-- Guard Post (Stockholm) - watches the road up from the main gate -->
+
+            <Wall>
+                <rects>
+                    <li>(40,60,47,60)</li>
+                    <li>(40,60,40,67)</li>
+                    <li>(47,60,47,67)</li>
+                    <li>(40,67,42,67)</li>
+                    <li>(45,67,47,67)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Wall>
+            <Door>
+                <rects>
+                    <li>(43,67,44,67)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+            <!-- Megaton Clinic (Doc Church) - right side of the path down to the crater floor -->
+
+            <Wall>
+                <rects>
+                    <li>(38,57,47,57)</li>
+                    <li>(38,49,38,57)</li>
+                    <li>(47,49,47,57)</li>
+                    <li>(38,49,40,49)</li>
+                    <li>(45,49,47,49)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Wall>
+            <Door>
+                <rects>
+                    <li>(42,49,43,49)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+            <!-- The Brass Lantern (Lucy West) - left side of the path down to the crater floor -->
+
+            <Wall>
+                <rects>
+                    <li>(26,58,35,58)</li>
+                    <li>(26,49,26,58)</li>
+                    <li>(35,49,35,58)</li>
+                    <li>(26,49,29,49)</li>
+                    <li>(32,49,35,49)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Wall>
+            <Door>
+                <rects>
+                    <li>(30,49,31,49)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+            <!-- Mr. Burke's House -->
+
+            <Wall>
+                <rects>
+                    <li>(24,67,32,67)</li>
+                    <li>(24,59,24,67)</li>
+                    <li>(32,59,32,67)</li>
+                    <li>(24,59,26,59)</li>
+                    <li>(29,59,32,59)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Wall>
+            <Door>
+                <rects>
+                    <li>(27,59,28,59)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+            <!-- Billy Creel & Maggie's House -->
+
+            <Wall>
+                <rects>
+                    <li>(8,27,18,27)</li>
+                    <li>(8,27,8,36)</li>
+                    <li>(8,36,18,36)</li>
+                    <li>(18,27,18,30)</li>
+                    <li>(18,33,18,36)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Wall>
+            <Door>
+                <rects>
+                    <li>(18,31,18,32)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+            <!-- Stahl Family House (Leo, Andy, Jenny Stahl) -->
+
+            <Wall>
+                <rects>
+                    <li>(8,39,19,39)</li>
+                    <li>(8,39,8,49)</li>
+                    <li>(8,49,19,49)</li>
+                    <li>(19,39,19,42)</li>
+                    <li>(19,45,19,49)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Wall>
+            <Door>
+                <rects>
+                    <li>(19,43,19,44)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+            <!-- Jericho's Shack -->
+
+            <Wall>
+                <rects>
+                    <li>(10,52,18,52)</li>
+                    <li>(10,52,10,60)</li>
+                    <li>(10,60,18,60)</li>
+                    <li>(18,52,18,54)</li>
+                    <li>(18,57,18,60)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Wall>
+            <Door>
+                <rects>
+                    <li>(18,55,18,56)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+            <!-- Rory Maclaren's House -->
+
+            <Wall>
+                <rects>
+                    <li>(16,69,23,69)</li>
+                    <li>(16,62,16,69)</li>
+                    <li>(23,62,23,69)</li>
+                    <li>(16,62,18,62)</li>
+                    <li>(21,62,23,62)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Wall>
+            <Door>
+                <rects>
+                    <li>(19,62,20,62)</li>
+                </rects>
+                <stuff>Steel</stuff>
+            </Door>
+
+        </things>
+    </PrefabDef>
+
+</Defs>

@@ -432,7 +432,7 @@
     <FCP.Core.CharacterDef MayRequire="Rick.FCP.Ghouls">
         <defName>FCP_Character_Gob</defName>
         <pawnKind>FCP_Unique_Pawnkind_Wastelander_Gob</pawnKind>
-        <xenotype>FCP_Xenotype_Ghoul</xenotype>
+        <xenotype MayRequire="Rick.FCP.Ghouls">FCP_Xenotype_Ghoul</xenotype>
         <faction>FCP_Faction_Hidden_Wastelanders</faction>
         <roles>
         </roles>
@@ -478,8 +478,8 @@
             <!-- Appearance -->
             <li Class="FCP.Core.CharacterAppearanceDefinition">
                 <hairColor>(140, 140, 140)</hairColor>
-                <hairDef>FCP_Hair_Balding</hairDef>
-                <beardDef>Moustache</beardDef>
+                <hairDef>Messy</hairDef>
+                <beardDef>Goatee</beardDef>
                 <skinColorOverride>(210, 180, 150)</skinColorOverride>
                 <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Male</bodyTypeDef>
@@ -1869,8 +1869,8 @@
             <li Class="FCP.Core.CharacterAppearanceDefinition">
                 <hairColor>(70, 55, 40)</hairColor>
                 <hairDef>FCP_Hair_Sarge</hairDef>
-                <beardDef>Moustache</beardDef>
-                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <beardDef>Full</beardDef>
+                <skinColorOverride>(110, 80, 55)</skinColorOverride>
                 <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Male</bodyTypeDef>
             </li>
@@ -1898,10 +1898,10 @@
             </li>
             <!-- Appearance -->
             <li Class="FCP.Core.CharacterAppearanceDefinition">
-                <hairColor>(70, 55, 40)</hairColor>
+                <hairColor>(60, 45, 35)</hairColor>
                 <hairDef>Messy</hairDef>
                 <beardDef>NoBeard</beardDef>
-                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <skinColorOverride>(120, 88, 62)</skinColorOverride>
                 <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Male</bodyTypeDef>
             </li>
@@ -2008,8 +2008,8 @@
             <li Class="FCP.Core.CharacterAppearanceDefinition">
                 <hairColor>(170, 165, 160)</hairColor>
                 <hairDef>FCP_Hair_Balding</hairDef>
-                <beardDef>NoBeard</beardDef>
-                <skinColorOverride>(190, 155, 120)</skinColorOverride>
+                <beardDef>Full</beardDef>
+                <skinColorOverride>(95, 70, 52)</skinColorOverride>
                 <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Thin</bodyTypeDef>
             </li>
@@ -2106,9 +2106,9 @@
             </li>
             <!-- Appearance -->
             <li Class="FCP.Core.CharacterAppearanceDefinition">
-                <hairColor>(30, 30, 30)</hairColor>
-                <hairDef>Bald</hairDef>
-                <beardDef>NoBeard</beardDef>
+                <hairColor>(90, 80, 70)</hairColor>
+                <hairDef>FCP_Hair_Sarge</hairDef>
+                <beardDef>Goatee</beardDef>
                 <skinColorOverride>(190, 150, 115)</skinColorOverride>
                 <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Male</bodyTypeDef>
@@ -2171,7 +2171,7 @@
             <!-- Appearance -->
             <li Class="FCP.Core.CharacterAppearanceDefinition">
                 <hairColor>(40, 30, 25)</hairColor>
-                <hairDef>FCP_Hair_Comb_Over</hairDef>
+                <hairDef>Messy</hairDef>
                 <beardDef>NoBeard</beardDef>
                 <skinColorOverride>(205, 170, 140)</skinColorOverride>
                 <headTypeDef>Male_AverageNormal</headTypeDef>
@@ -2252,7 +2252,7 @@
             </li>
             <!-- Appearance -->
             <li Class="FCP.Core.CharacterAppearanceDefinition">
-                <hairColor>(200, 170, 100)</hairColor>
+                <hairColor>(110, 80, 55)</hairColor>
                 <hairDef>FCP_Hair_Buzz_Cut</hairDef>
                 <beardDef>NoBeard</beardDef>
                 <skinColorOverride>(215, 180, 150)</skinColorOverride>
@@ -2289,7 +2289,7 @@
                 <hairColor>(150, 150, 150)</hairColor>
                 <hairDef>FCP_Hair_Balding</hairDef>
                 <beardDef>Full</beardDef>
-                <skinColorOverride>(200, 165, 130)</skinColorOverride>
+                <skinColorOverride>(105, 78, 58)</skinColorOverride>
                 <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Male</bodyTypeDef>
             </li>
@@ -2316,7 +2316,7 @@
             </li>
             <!-- Appearance -->
             <li Class="FCP.Core.CharacterAppearanceDefinition">
-                <hairColor>(100, 70, 50)</hairColor>
+                <hairColor>(200, 175, 120)</hairColor>
                 <hairDef>FCP_Hair_Frazzled</hairDef>
                 <beardDef>NoBeard</beardDef>
                 <skinColorOverride>(215, 180, 150)</skinColorOverride>
@@ -2346,7 +2346,7 @@
             </li>
             <!-- Appearance -->
             <li Class="FCP.Core.CharacterAppearanceDefinition">
-                <hairColor>(50, 40, 30)</hairColor>
+                <hairColor>(165, 160, 155)</hairColor>
                 <hairDef>FCP_Hair_Mangy</hairDef>
                 <beardDef>NoBeard</beardDef>
                 <skinColorOverride>(170, 135, 105)</skinColorOverride>
