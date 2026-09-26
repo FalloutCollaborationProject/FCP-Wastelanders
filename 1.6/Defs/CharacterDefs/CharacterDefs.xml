@@ -1306,7 +1306,7 @@
     <FCP.Core.CharacterDef>
         <defName>FCP_Character_Irma</defName>
         <pawnKind>FCP_Unique_Pawnkind_Wastelander_Irma</pawnKind>
-        <xenotype>Baseliner</xenotype>
+        <xenotype MayRequire="Rick.FCP.Ghouls">FCP_Xenotype_Ghoul</xenotype>
         <faction>FCP_Faction_Hidden_Wastelanders</faction>
         <roles>
         </roles>
@@ -1321,10 +1321,10 @@
             </li>
             <!-- Appearance -->
             <li Class="FCP.Core.CharacterAppearanceDefinition">
-                <hairColor>(130, 80, 50)</hairColor>
-                <hairDef>FCP_Hair_Seductress</hairDef>
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>Bald</hairDef>
                 <beardDef>NoBeard</beardDef>
-                <skinColorOverride>(225, 195, 170)</skinColorOverride>
+                <skinColorOverride>(150, 121, 111)</skinColorOverride>
                 <headTypeDef>Female_AverageNormal</headTypeDef>
                 <bodyTypeDef>Female</bodyTypeDef>
             </li>
@@ -1608,7 +1608,7 @@
     <FCP.Core.CharacterDef>
         <defName>FCP_Character_Harold</defName>
         <pawnKind>FCP_Unique_Pawnkind_Wastelander_Harold</pawnKind>
-        <xenotype>Baseliner</xenotype>
+        <xenotype MayRequire="Rick.FCP.Ghouls">FCP_Xenotype_Ghoul</xenotype>
         <faction>FCP_Faction_Hidden_Wastelanders</faction>
         <roles>
         </roles>
@@ -1626,7 +1626,7 @@
                 <hairColor>(20, 20, 20)</hairColor>
                 <hairDef>Bald</hairDef>
                 <beardDef>NoBeard</beardDef>
-                <skinColorOverride>(170, 140, 115)</skinColorOverride>
+                <skinColorOverride>(143, 116, 106)</skinColorOverride>
                 <headTypeDef>Male_AverageNormal</headTypeDef>
                 <bodyTypeDef>Thin</bodyTypeDef>
             </li>
