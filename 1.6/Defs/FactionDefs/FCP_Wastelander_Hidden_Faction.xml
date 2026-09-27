@@ -353,6 +353,19 @@
                     <li>FCP_Character_Trashcan_Carla</li>
                 </characterDefs>
             </li>
+
+            <!-- Erickson -->
+
+            <li Class="FCP.Core.GroupMakerWithCustomTraderChar" MayRequire="Rick.FCP.SuperMutants">
+                <kindDef>Trader</kindDef>
+                <traderKind>FCP_Caravan_Erickson</traderKind>
+                <traders>
+                    <FCP_Unique_PawnKind_Erickson>1</FCP_Unique_PawnKind_Erickson>
+                </traders>
+                <characterDefs>
+                    <li>FCP_Character_SuperMutant_Erickson</li>
+                </characterDefs>
+            </li>
         </pawnGroupMakers>
         <modExtensions Inherit="False">
             <li Class="FCP.Factions.FactionExtension_HiddenFactionHasCaravans" />
